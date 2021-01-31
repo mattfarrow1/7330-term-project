@@ -21,7 +21,7 @@ score_dir <- here::here("data - raw", "scores")
 # Make our intentions known to the website and see what we're allowed to do
 session <- bow(
   url = "http://www.j-archive.com/listseasons.php",  # base URL
-  user_agent = "M Farrow <https://www.mattfarrow.co>"  # identify ourselves
+  user_agent = "Matt Farrow"  # identify ourselves
 )
 
 session
