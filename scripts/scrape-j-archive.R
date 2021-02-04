@@ -1,7 +1,7 @@
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #
 # Scrape J! Archive
-# Matt Farrow
+# Megan Ball, Matt Farrow, Jake Harrison
 #
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -70,7 +70,7 @@ get_game_data <- function(id, verbose = FALSE) {
         clue     = character(0),
         response = character(0),
         link     = character(0),
-        # contestants = character(0),
+        contestants = character(0),
         comments = character(0)
       )
     )
@@ -94,8 +94,8 @@ get_game_data <- function(id, verbose = FALSE) {
     rvest::html_text() %>%
     tibble::enframe() %>%
     select(value) %>%
-    mutate(key = paste('player', row_number())) %>%
-    pivot_wider(names_from = key, values_from = value)
+    tidyr::separate(value, c("name", 'bio'), sep = ", ") %>% 
+    mutate(key = paste('player', row_number()))
 
   categories <- rounds %>%
     rvest::html_nodes(".category_name") %>%
@@ -154,12 +154,14 @@ get_game_data <- function(id, verbose = FALSE) {
       round = round,
       value = readr::parse_number(value),
       date  = lubridate::mdy(date),
-      game_comments = comments,
-      player1 = contestants[, 1],
-      player2 = contestants[, 2],
-      player3 = contestants[, 3]
-    ) %>%
-    dplyr::select(date, round, category, comment, value, clue, response, link, game_comments, player1, player2, player3)
+      game_comments = comments$comments,
+      player1_name = contestants$name[1],
+      player1_bio = contestants$bio[1],
+      player2_name = contestants$name[2],
+      player2_bio = contestants$bio[2],
+      player3_name = contestants$name[3],
+      player3_bio = contestants$bio[3],
+    )
   
 }
 
@@ -174,13 +176,20 @@ get_player_name <- function(id) {
     html_text()
 }
 
+# Game IDs by Year
+
+games2021 <- 6896:6931
+
 # Scrape Data -------------------------------------------------------------
 
 # Enter game IDs into `map` function to get the data from those games
-game_data <- map(6895:6900, get_game_data)
+game_data <- map(6896:6931, get_game_data)
 
-# Convert list generated in the previous line into a single tibble
+# Convert list generated in the previous line into a single data frame
 games <- as_tibble(do.call(rbind, game_data))
+
+# Save games
+write_csv(games, paste0(game_dir, "/2021 games.csv"))
 
 # Enter player IDs into `map` function
 player_names <- map(1:10, get_player_name)
