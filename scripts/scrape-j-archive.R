@@ -30,8 +30,6 @@ session
 
 # Get Game Data -----------------------------------------------------------
 
-game_ids <- 1:6924
-
 get_game_data <- function(id, verbose = FALSE) {
  
   # Define URL for game data
@@ -89,13 +87,26 @@ get_game_data <- function(id, verbose = FALSE) {
     select(value) %>% 
     rename(comments = value)
   
+  contestant_ids <- html %>%
+    rvest::html_nodes(".contestants") %>% 
+    rvest::html_nodes("a") %>% 
+    html_attr("href") %>% 
+    str_sub(start = 52) %>% 
+    tibble::enframe() %>%
+    rename(contestant_id = value) %>% 
+    mutate(key = paste('player', row_number())) %>% 
+    select(-1)
+  
   contestants <- html %>%
     rvest::html_nodes(".contestants") %>%
     rvest::html_text() %>%
     tibble::enframe() %>%
     select(value) %>%
-    tidyr::separate(value, c("name", 'bio'), sep = ", ") %>% 
+    tidyr::separate(value, into = c("name", 'bio'), sep = ", ", extra = "drop") %>% 
     mutate(key = paste('player', row_number()))
+  
+  contestants <- full_join(contestant_ids, contestants) %>% 
+    select(2, 1, 3, 4)
 
   categories <- rounds %>%
     rvest::html_nodes(".category_name") %>%
@@ -155,25 +166,17 @@ get_game_data <- function(id, verbose = FALSE) {
       value = readr::parse_number(value),
       date  = lubridate::mdy(date),
       game_comments = comments$comments,
+      player1_id = contestants$contestant_id[1],
       player1_name = contestants$name[1],
       player1_bio = contestants$bio[1],
+      player2_id = contestants$contestant_id[2],
       player2_name = contestants$name[2],
       player2_bio = contestants$bio[2],
+      player3_id = contestants$contestant_id[3],
       player3_name = contestants$name[3],
       player3_bio = contestants$bio[3],
     )
   
-}
-
-# Get Player Info ---------------------------------------------------------
-
-get_player_name <- function(id) {
-  read_html(paste0(
-    "https://www.j-archive.com/showplayerstats.php?player_id=",
-    id
-  )) %>%
-    html_node(".player_full_name") %>%
-    html_text()
 }
 
 # Game IDs by Year
@@ -183,16 +186,10 @@ games2021 <- 6896:6931
 # Scrape Data -------------------------------------------------------------
 
 # Enter game IDs into `map` function to get the data from those games
-game_data <- map(6896:6931, get_game_data)
+game_data <- map(6895, get_game_data)
 
 # Convert list generated in the previous line into a single data frame
 games <- as_tibble(do.call(rbind, game_data))
 
 # Save games
 write_csv(games, paste0(game_dir, "/2021 games.csv"))
-
-# Enter player IDs into `map` function
-player_names <- map(1:10, get_player_name)
-
-player_names %>% 
-  unlist()
