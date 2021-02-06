@@ -36,6 +36,10 @@ get_game_data <- function(id, verbose = FALSE) {
   url <-
     paste0("http://www.j-archive.com/showgame.php?game_id=", id)
   
+  # Define the game ID
+  game_id <- url %>% 
+    str_sub(start = 47)
+  
   # Politely scrape the data, using a 20 second delay between attempts
   html <- url %>%
     polite::bow(delay = 20) %>%
@@ -227,29 +231,35 @@ get_game_data <- function(id, verbose = FALSE) {
       player3_bio = contestants$bio[3],
       player3_score_dj = contestants$score_dj[3],
       player3_score_fj = contestants$score_fj[3],
-      game_id = url
+      game_id = game_id
     )
   
 }
 
 # Scrape Data -------------------------------------------------------------
 
-# Enter game IDs into `map` function to get the data from those games
-game_data <- map(6895:6896, get_game_data)
+# Megan's Games
+game_data_megan <- map(1:2000, get_game_data)
+game_details_megan <- as_tibble(do.call(rbind, game_data_megan)) 
+write_csv(game_details_megan, here::here("data - output", "game_details_1_2000.csv"))
 
-# Convert game data into a tibble
-game_details <- as_tibble(do.call(rbind, game_data)) 
+game_data_jake <- map(2001:4000, get_game_data)
+game_details_jake <- as_tibble(do.call(rbind, game_data_jake)) 
+write_csv(game_details_jake, here::here("data - output", "game_details_20001_4000.csv"))
+
+game_data_matt <- map(4001:6932, get_game_data)
+game_details_matt <- as_tibble(do.call(rbind, game_data_matt)) 
+write_csv(game_details_matt, here::here("data - output", "game_details_4001_6932.csv"))
 
 # Split into data sets ----------------------------------------------------
 
-colnames(game_details)
-
-games <- game_details %>% 
-  select(game_id, date, id, value, clue, response, link, round, category, comment)
-
-players <- game_details %>% 
-  select(game_id, date, 10:25) %>% 
-  distinct()
-
-# Save games
-# write_csv(games, paste0(game_dir, "/2021 games.csv"))
+# games <- game_details %>% 
+#   select(game_id, date, id, value, clue, response, link, round, category, comment)
+# 
+# players <- game_details %>% 
+#   select(game_id, date, 10:25) %>% 
+#   distinct()
+# 
+# # Save
+# write_csv(games,   here::here("data - output", "games.csv"))
+# write_csv(players, here::here("data - output", "scores.csv"))
