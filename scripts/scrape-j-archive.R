@@ -31,7 +31,7 @@ session
 # Get Game Data -----------------------------------------------------------
 
 get_game_data <- function(id, verbose = FALSE) {
- 
+  
   # Define URL for game data
   url <-
     paste0("http://www.j-archive.com/showgame.php?game_id=", id)
@@ -50,7 +50,7 @@ get_game_data <- function(id, verbose = FALSE) {
   if (verbose) {
     message("Scraping game ", id, " (", date, ")")
   }
-
+  
   rounds <- rvest::html_nodes(html, ".round")
   
   if (!length(rounds)) {
@@ -83,18 +83,18 @@ get_game_data <- function(id, verbose = FALSE) {
   comments <- html %>%
     rvest::html_nodes("#game_comments") %>%
     rvest::html_text() %>%
-    tibble::enframe() %>% 
-    select(value) %>% 
+    tibble::enframe() %>%
+    select(value) %>%
     rename(comments = value)
   
   contestant_ids <- html %>%
-    rvest::html_nodes(".contestants") %>% 
-    rvest::html_nodes("a") %>% 
-    html_attr("href") %>% 
-    str_sub(start = 52) %>% 
+    rvest::html_nodes(".contestants") %>%
+    rvest::html_nodes("a") %>%
+    rvest::html_attr("href") %>%
+    str_sub(start = 52) %>%
     tibble::enframe() %>%
-    rename(contestant_id = value) %>% 
-    mutate(key = paste('player', row_number())) %>% 
+    rename(contestant_id = value) %>%
+    mutate(key = paste('player', row_number())) %>%
     select(-1)
   
   contestants <- html %>%
@@ -102,12 +102,58 @@ get_game_data <- function(id, verbose = FALSE) {
     rvest::html_text() %>%
     tibble::enframe() %>%
     select(value) %>%
-    tidyr::separate(value, into = c("name", 'bio'), sep = ", ", extra = "drop") %>% 
+    tidyr::separate(
+      value,
+      into = c("name", 'bio'),
+      sep = ", ",
+      extra = "drop"
+    ) %>%
+    tidyr::separate(
+      name,
+      into = c("first", "last"),
+      sep = " ",
+      remove = FALSE,
+      extra = "drop"
+    ) %>%
     mutate(key = paste('player', row_number()))
   
-  contestants <- full_join(contestant_ids, contestants) %>% 
-    select(2, 1, 3, 4)
-
+  # Get the table for the scores prior to final jeopardy
+  scores_dj <- html %>% 
+    rvest::html_nodes("#double_jeopardy_round > table:nth-child(4)") %>% 
+    rvest::html_table(fill = TRUE) %>% 
+    as.data.frame() %>%
+    tibble::rownames_to_column() %>%
+    pivot_longer(cols = -1,
+                 names_to = "name",
+                 values_to = "value") %>%
+    pivot_wider(names_from = rowname, values_from = value) %>%
+    select(c(2:3)) %>%
+    rename(first = `1`,
+           score_dj = `2`) %>%
+    mutate(score_dj = parse_number(score_dj))
+  
+  # Get the table for the scores after final jeopardy
+  scores_fj <- html %>% 
+    rvest::html_nodes("#final_jeopardy_round > table:nth-child(4)") %>% 
+    rvest::html_table(fill = TRUE) %>% 
+    as.data.frame() %>%
+    tibble::rownames_to_column() %>%
+    pivot_longer(cols = -1,
+                 names_to = "name",
+                 values_to = "value") %>%
+    pivot_wider(names_from = rowname, values_from = value) %>%
+    select(c(2:3)) %>%
+    rename(first = `1`,
+           score_fj = `2`) %>%
+    mutate(score_fj = parse_number(score_fj))
+  
+  # Merge scores and contestants
+  contestants <- left_join(contestants, scores_dj, by = "first")
+  contestants <- left_join(contestants, scores_fj, by = "first")
+  
+  # Merge contestant ID into contestants
+  contestants <- full_join(contestant_ids, contestants, by = "key")
+  
   categories <- rounds %>%
     rvest::html_nodes(".category_name") %>%
     rvest::html_text() %>%
@@ -137,7 +183,7 @@ get_game_data <- function(id, verbose = FALSE) {
     ) %>%
     dplyr::left_join(categories, by = c("cat_id", "round")) %>%
     dplyr::select(-cat_id)
-
+  
   
   final_jeopardy <- html %>%
     rvest::html_nodes(".final_round") %>%
@@ -169,27 +215,41 @@ get_game_data <- function(id, verbose = FALSE) {
       player1_id = contestants$contestant_id[1],
       player1_name = contestants$name[1],
       player1_bio = contestants$bio[1],
+      player1_score_dj = contestants$score_dj[1],
+      player1_score_fj = contestants$score_fj[1],
       player2_id = contestants$contestant_id[2],
       player2_name = contestants$name[2],
       player2_bio = contestants$bio[2],
+      player2_score_dj = contestants$score_dj[2],
+      player2_score_fj = contestants$score_fj[2],
       player3_id = contestants$contestant_id[3],
       player3_name = contestants$name[3],
       player3_bio = contestants$bio[3],
+      player3_score_dj = contestants$score_dj[3],
+      player3_score_fj = contestants$score_fj[3],
+      game_id = url
     )
   
 }
 
-# Game IDs by Year
-
-games2021 <- 6896:6931
-
 # Scrape Data -------------------------------------------------------------
 
 # Enter game IDs into `map` function to get the data from those games
-game_data <- map(6895, get_game_data)
+game_data <- map(6895:6896, get_game_data)
 
-# Convert list generated in the previous line into a single data frame
-games <- as_tibble(do.call(rbind, game_data))
+# Convert game data into a tibble
+game_details <- as_tibble(do.call(rbind, game_data)) 
+
+# Split into data sets ----------------------------------------------------
+
+colnames(game_details)
+
+games <- game_details %>% 
+  select(game_id, date, id, value, clue, response, link, round, category, comment)
+
+players <- game_details %>% 
+  select(game_id, date, 10:25) %>% 
+  distinct()
 
 # Save games
-write_csv(games, paste0(game_dir, "/2021 games.csv"))
+# write_csv(games, paste0(game_dir, "/2021 games.csv"))
