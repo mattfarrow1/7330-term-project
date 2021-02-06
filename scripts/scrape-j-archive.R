@@ -134,7 +134,8 @@ get_game_data <- function(id, verbose = FALSE) {
     select(c(2:3)) %>%
     rename(first = `1`,
            score_dj = `2`) %>%
-    mutate(score_dj = parse_number(score_dj))
+    mutate(score_dj = str_replace(score_dj, "^-\\$(.*)$", "$-\\1"),
+           score_dj = parse_number(score_dj))
   
   # Get the table for the scores after final jeopardy
   scores_fj <- html %>% 
@@ -149,7 +150,8 @@ get_game_data <- function(id, verbose = FALSE) {
     select(c(2:3)) %>%
     rename(first = `1`,
            score_fj = `2`) %>%
-    mutate(score_fj = parse_number(score_fj))
+    mutate(score_dj = str_replace(score_dj, "^-\\$(.*)$", "$-\\1"),
+           score_dj = parse_number(score_dj))
   
   # Merge scores and contestants
   contestants <- left_join(contestants, scores_dj, by = "first")
