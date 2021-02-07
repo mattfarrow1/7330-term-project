@@ -42,7 +42,7 @@ get_game_data <- function(id, verbose = FALSE) {
   
   # Politely scrape the data, using a 20 second delay between attempts
   html <- url %>%
-    polite::bow(delay = 20) %>%
+    polite::bow(delay = 25) %>%
     polite::scrape()
   
   # Get the date of the game
