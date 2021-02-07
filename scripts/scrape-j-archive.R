@@ -142,7 +142,7 @@ get_game_data <- function(id, verbose = FALSE) {
   # Get the table for the scores after final jeopardy
   scores_fj <- html %>% 
     rvest::html_nodes("#final_jeopardy_round > table:nth-child(4)") %>% 
-    rvest::html_table(fill = TRUE) %>% 
+    rvest::html_table() %>% 
     as.data.frame() %>%
     tibble::rownames_to_column() %>%
     pivot_longer(cols = -1,
@@ -152,8 +152,8 @@ get_game_data <- function(id, verbose = FALSE) {
     select(c(2:3)) %>%
     rename(first = `1`,
            score_fj = `2`) %>%
-    mutate(score_dj = str_replace(score_dj, "^-\\$(.*)$", "$-\\1"),
-           score_dj = parse_number(score_dj))
+    mutate(score_fj = str_replace(score_fj, "^-\\$(.*)$", "$-\\1"),
+           score_fj = parse_number(score_fj))
   
   # Merge scores and contestants
   contestants <- left_join(contestants, scores_dj, by = "first")
