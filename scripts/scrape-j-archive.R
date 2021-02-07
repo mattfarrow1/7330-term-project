@@ -110,21 +110,23 @@ get_game_data <- function(id, verbose = FALSE) {
       value,
       into = c("name", 'bio'),
       sep = ", ",
-      extra = "drop"
+      extra = "drop",
+      fill = "right"
     ) %>%
     tidyr::separate(
       name,
       into = c("first", "last"),
       sep = " ",
       remove = FALSE,
-      extra = "drop"
+      extra = "drop",
+      fill = "right"
     ) %>%
     mutate(key = paste('player', row_number()))
   
   # Get the table for the scores prior to final jeopardy
   scores_dj <- html %>% 
     rvest::html_nodes("#double_jeopardy_round > table:nth-child(4)") %>% 
-    rvest::html_table(fill = TRUE) %>% 
+    rvest::html_table() %>% 
     as.data.frame() %>%
     tibble::rownames_to_column() %>%
     pivot_longer(cols = -1,
