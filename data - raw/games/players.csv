@@ -1,0 +1,1444 @@
+"first","last","occupation","from","uid"
+"J.D.","Smith","An Editor And Writer","Washington, D.C.",1
+"Betsey","Casman","An Appeal And Grievance Analyst","Las Vegas, Nevada",1
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",1
+"Rich","Hartz","Food Bank Agency Coordinator","Huntsville, Alabama",2
+"Bob","Watts","Poet","Taylorsville, North Carolina",2
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",2
+"Laura","Gustafson","An Information Manager","Acton, Massachusetts",3
+"Adam","Meyer","College Professor","Nashville, Tennessee",3
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",3
+"Todd","Perkins","Private School Administrator","Vacaville, California",4
+"Amy","Helmes","Writer Originally","Cincinnati, Ohio",4
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",4
+"Bill","Scheller","Writer","Waterville, Vermont",5
+"Kollin","Min","An Attorney","Seattle, Washington",5
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",5
+"Bruce","England","Biochemist","Hayward, California",6
+"Dana","Dolan","Writer And Editor","Atlanta, Georgia",6
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",6
+"Robert","Quinn","Real Estate Manager And Actor","Hoboken, New Jersey",7
+"Kate","Duffy","Reporter","Lebanon, New Hampshire",7
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",7
+"David","Fishbach","Consulting Program Manager","Watertown, Massachusetts",8
+"Cara","Butler","Stay-At-Home Mom Originally","Hamilton, Ohio",8
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",8
+"Elaine","Skopelja","Medical Librarian","Carmel, Indiana",9
+"John","Cook","An Urban Planner","Corona Del Mar, California",9
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",9
+"Greg","Taylor","Lawyer","Glendale, California",10
+"Marilyn","Werner","Registered Nurse","Maryville, Tennessee",10
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",10
+"Keith","Williams","College Student","Manchester, Vermont",11
+"Sam","Ott","Graduate Student","Los Angeles, California",11
+"Arthur","Gandolfi","Commercial Real Estate Executive","Pleasantville, New York",11
+"Steve","Reynolds","Loan Accounting Clerk","Norman, Oklahoma",12
+"Seth","Alcorn","Bookstore Supervisor","Alexandria, Virginia",12
+"Tom","Walsh","Writer","Washington, D.C.",12
+"Vinita","Kailasanath","Recent College Graduate Originally","Laurel, Maryland",13
+"Scott","Renzoni","Bartender And Actor","Burlington, Vermont",13
+"John","Beck","An Associate Creative Director","Torrance, California",13
+"Russ","Schumacher","Graduate Student","Fort Collins, Colorado",14
+"Tom","Baker","Writer","Tokyo, Japan",14
+"Chris","Miller","Retail Specialist","Louisville, Kentucky",14
+"Jim","Stalley","Crime Data Specialist","Denver, Colorado",15
+"Anne","Boyd","Freelance Writer And Student","Los Angeles, California",15
+"Sean","Ryan","Cab Driver","State College, Pennsylvania",15
+"Vinita","Kailasanath","Recent College Graduate Originally","Laurel, Maryland",16
+"Seth","Alcorn","Bookstore Supervisor","Alexandria, Virginia",16
+"Russ","Schumacher","Graduate Student","Fort Collins, Colorado",16
+"Chris","Miller","Retail Specialist","Louisville, Kentucky",17
+"Anne","Boyd","Freelance Writer And Student","Los Angeles, California",17
+"Tom","Walsh","Writer","Washington, D.C.",17
+"Steve","Reynolds","Loan Accounting Clerk","Norman, Oklahoma",18
+"Arthur","Gandolfi","Commercial Real Estate Executive","Pleasantville, New York",18
+"Tom","Baker","Writer","Tokyo, Japan",18
+"Russ","Schumacher","Graduate Student","Fort Collins, Colorado",19
+"Tom","Walsh","Writer","Washington, D.C.",19
+"Arthur","Gandolfi","Commercial Real Estate Executive","Pleasantville, New York",19
+"Beth","Salkind","Paralegal","Lansdowne, Pennsylvania",21
+"Jeff","Suchard","Toxicologist","Placentia, California",21
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",21
+"Jay","Wolman","An Attorney And Mediator","Washington, D.C.",22
+"Pat","Greene","Homemaker","Mountain View, California",22
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",22
+"Bill","Carter","Personal Fitness Trainer","New York, New York",23
+"Kathryn","Dorminey","An Evaluations Analyst","Arlington, Virginia",23
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",23
+"Jennifer","Lord","Teacher","Wilmington, Delaware",24
+"Steve","Kornya","Courier","Baltimore, Maryland",24
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",24
+"Al","Lindke","Pastor","Montrose, Michigan",25
+"Aimee","Watson","Mother And Erstwhile Attorney","Lake Wylie, South Carolina",25
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",25
+"Tristan","Mabry","PH.D. Student","Philadelphia, Pennsylvania",26
+"Sunny","Schomaker","An Events Coordinator","Madison, Wisconsin",26
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",26
+"Marcy","Palino","Registered Nurse","Shepherdstown, West Virginia",27
+"Matt","Kleinmaier","Medical Student","Chicago, Illinois",27
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",27
+"Larry","Bellinger","Journalist","Washington, D.C.",28
+"Marielle","Poss","Senior Production Controller","Brooklyn, New York",28
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",28
+"K.C.","Backer","Graduate Student","Bloomington, Indiana",29
+"Graham","House","Musician","Lincoln, Nebraska",29
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",29
+"José","Ruiz JR.","High School Teacher","Silver Spring, Maryland",30
+"Josh","Rosenfeld","Graduate Student","Torrance, California",30
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",30
+"Kelly","Scurry","An 11-Year-Old Seventh Grader","Lauderhill, Florida",31
+"Tim","Koch","12-Year-Old Sixth Grader","Cliffwood, New Jersey",31
+"Megan","Fraedrich","12-Year-Old Seventh Grader","Springfield, Virginia",31
+"Emily","Riippa","12-Year-Old Seventh Grader","Grand Rapids, Michigan",32
+"Nithya","Kubendran","An 11-Year-Old Seventh Grader","Quartz Hill, California",32
+"Jake","Houser","12-Year-Old Seventh Grader","Aptos, California",32
+"Tamika","Turner","An 11-Year-Old Eighth Grader","Sylvania, Ohio",33
+"Grace","Thomas","An 11-Year-Old Sixth Grader","Raleigh, North Carolina",33
+"Josh","Klein","12-Year-Old Seventh Grader","Philadelphia, Pennsylvania",33
+"Alex","Nutman","12-Year-Old Seventh Grader","Chevy Chase, Maryland",34
+"Edward","Lee","12-Year-Old Seventh Grader","Sacramento, California",34
+"Lorna","Johnson","12-Year-Old Seventh Grader","Willowbrook, Illinois",34
+"Patrick","Zakem","An 11-Year-Old Sixth Grader","Louisville, Kentucky",35
+"Theodora","Messalas","An 11-Year-Old Sixth Grader","Brooklyn, New York",35
+"Ross","Gardiner","An 11-Year-Old Sixth Grader","La Plata, Maryland",35
+"Nathan","Gordon","Bar Manager","New Orleans, Louisiana",36
+"Jennifer","Harriss","Community Counselor","Minneapolis, Minnesota",36
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",36
+"Mary","Carpenter","An Engineer","Bear, Delaware",37
+"Jeff","Matthews","Managing Copy Editor","Los Angeles, California",37
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",37
+"Merritt","Hamilton Allen","Director Of Communications Originally","Silver City, New Mexico",38
+"Adam","Villani","An Engineer","Long Beach, California",38
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",38
+"Bob","Joseph","Businessman And Attorney","Mclean, Virginia",39
+"Lori","Ann Tennant","Homemaker","Fairmont, West Virginia",39
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",39
+"Sandy","Grimwade","Publisher","Bala Cynwyd, Pennsylvania",40
+"Brian","Shipley","Historian Originally","Toronto, Canada",40
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",40
+"Lisa","Ellis","High School Teacher","Shaker Heights, Ohio",41
+"Ben","Wiles","Minister","Murfreesboro, Tennessee",41
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",41
+"Rob","Perry","Graphic Designer","Brooklyn, New York",42
+"Denise","Tanyol","Student And Adjunct Writing Instructor","Norristown, Pennsylvania",42
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",42
+"Jennifer","Knapp","Documentation Manager","Norfolk, Virginia",43
+"Jerry","Taggart","Billing Administrator","Holiday, Florida",43
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",43
+"Elizabeth","Costello","An Attorney And Media Sales Rep Originally","Mahopac, New York",44
+"John","Murray","An Aspiring Playwright","Jersey City, New Jersey",44
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",44
+"Leo","Wolpert","College Student","Fairfax, Virginia",45
+"Ryan","Cook","Graduate Student Originally","Eveleth, Minnesota",45
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",45
+"Jennifer","Peebles","Newspaper Editor","Madison, Tennessee",46
+"Robert","Kirkpatrick","An Animator","Miami Beach, Florida",46
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",46
+"Dave","Oosterhuis","Graduate Student","Minneapolis, Minnesota",47
+"Jeff","Hoppes","Graduate Student","El Cerrito, California",47
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",47
+"Casey","Retterer","Sophomore At The University Of Maryland","Olney, Maryland",48
+"Amory","Jendrek","Freshman At Davidson College","Knoxville, Tennessee",48
+"Kermin","Fleming","Junior At Carnegie Mellon University","Lexington, Kentucky",48
+"Vicky","Manos","Sophomore At ST. John’s University","Levittown, New York",49
+"Jeff","Love","Sophomore At Stanford University","Burlingame, California",49
+"Amanda","Nowotny","Sophomore At The University Of Pittsburgh","New Castle, Pennsylvania",49
+"Matt","Bushell","Junior At Georgetown University","Fairfield, Connecticut",50
+"Kelley","Burd","Junior At West Virginia University","Bristol, West Virginia",50
+"Larry","Marshall","Junior At The University Of Missouri","Kansas City, Missouri",50
+"Lindsey","Hargrove","Senior At The University Of Texas","Bellaire, Texas",51
+"Ari","Schoenholtz","Senior At Williams College","Bethesda, Maryland",51
+"Lily","Wang","Junior At Columbia University","Plano, Texas",51
+"Christina","Maes","Senior At The University Of Wisconsin - Green Bay","Green Bay, Wisconsin",52
+"Brad","Selvig","Sophomore At Florida State","Jacksonville, Florida",52
+"Rachel","Mccool","Sophomore At Dickinson College","Pittsburgh, Pennsylvania",52
+"Vicky","Manos","Sophomore At ST. John’s University","Levittown, New York",53
+"Ari","Schoenholtz","Senior At Williams College","Bethesda, Maryland",53
+"Casey","Retterer","Sophomore At The University Of Maryland","Olney, Maryland",53
+"Amory","Jendrek","Freshman At Davidson College","Knoxville, Tennessee",54
+"Rachel","Mccool","Sophomore At Dickinson College","Pittsburgh, Pennsylvania",54
+"Lily","Wang","Junior At Columbia University","Plano, Texas",54
+"Lindsey","Hargrove","Senior At The University Of Texas","Bellaire, Texas",55
+"Kelley","Burd","Junior At West Virginia University","Bristol, West Virginia",55
+"Kermin","Fleming","Junior At Carnegie Mellon University","Lexington, Kentucky",55
+"Ari","Schoenholtz","Senior At Williams College","Bethesda, Maryland",56
+"Rachel","Mccool","Sophomore At Dickinson College","Pittsburgh, Pennsylvania",56
+"Kermin","Fleming","Junior At Carnegie Mellon University","Lexington, Kentucky",56
+"Dan","Ford","An Editor","Arlington, Virginia",58
+"Lisa","Buckhout","Research Associate Originally","Niagara Falls, New York",58
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",58
+"Whitney","Donaghy","An Illustrations Coordinator","Manassas, Virginia",59
+"Philip","Graves","An It Consultant","Somerset, New Jersey",59
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",59
+"Sanda","Kurtz","Price Protection Manager","Miami Beach, Florida",60
+"Andrew","Smith","An Online High School Teacher","Lake Elizabeth, California",60
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",60
+"Kathi","Fry","Physician","Scottsdale, Arizona",61
+"Rob","Kimbro","Theater Director And Stay-At-Home Dad","Princeton, New Jersey",61
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",61
+"David","Hankins","College Student","Minneapolis, Minnesota",62
+"Nancy","Zerg","Realtor","Ventura, California",62
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",62
+"Katie","Fitzgerald","Wealth Management Project Analyst Originally","New Rochelle, New York",63
+"Nathan","Brownback","Research Assistant","Washington, D.C.",63
+"Nancy","Zerg","Realtor","Ventura, California",63
+"Josh","Kolchins","Homeland Security Consultant","Bethesda, Maryland",64
+"Sherri","Benoun","Planning Clerk","Anaheim, California",64
+"Katie","Fitzgerald","Wealth Management Project Analyst Originally","New Rochelle, New York",64
+"Kord","Heinemann","Truck Driver","Allentown, Pennsylvania",65
+"Pete","Deballi","An Anesthesiologist","Titusville, Florida",65
+"Katie","Fitzgerald","Wealth Management Project Analyst Originally","New Rochelle, New York",65
+"Andy","Zimdars","Graduate Student","Menlo Park, California",66
+"Dennis","Grace","An Engineer","West Bloomfield, Michigan",66
+"Pete","Deballi","An Anesthesiologist","Titusville, Florida",66
+"Shelley","Singh","House Painter","Plymouth Meeting, Pennsylvania",67
+"Jackie","Cipa","Library Assistant","Pittsburgh, Pennsylvania",67
+"Dennis","Grace","An Engineer","West Bloomfield, Michigan",67
+"Megan","Susman","An Environmental Policy Specialist","Arlington, Virginia",68
+"Alex","Bready","Law Student","Towson, Maryland",68
+"Jackie","Cipa","Library Assistant","Pittsburgh, Pennsylvania",68
+"Tom","Mccudden","Law Student","Durham, North Carolina",69
+"Karen","Lafferty","Teacher","San Diego, California",69
+"Megan","Susman","An Environmental Policy Specialist","Arlington, Virginia",69
+"Colette","Moran","Stay-At-Home Mom","Chicago, Illinois",70
+"Robert","Bowsher","Software Engineer","Hilliard, Ohio",70
+"Tom","Mccudden","Law Student","Durham, North Carolina",70
+"David","Davalos","Playwright","New York, New York",71
+"Snow","Tempest","Writer","Los Angeles, California",71
+"Robert","Bowsher","Software Engineer","Hilliard, Ohio",71
+"Jerry","Mayer","Political Science Professor","Arlington, Virginia",72
+"Joel","Kahn","Physician","Irvine, California",72
+"Robert","Bowsher","Software Engineer","Hilliard, Ohio",72
+"Maureen","Mckay","Systems Engineer","Potomac Falls, Virginia",73
+"Ethan","De Seife","Graduate Student","Madison, Wisconsin",73
+"Joel","Kahn","Physician","Irvine, California",73
+"Cliff","Kowalczyk","Trucking Subcontractor","Lakewood, Ohio",74
+"Grayson","Holmes","Legal Assistant","Washington, D.C.",74
+"Joel","Kahn","Physician","Irvine, California",74
+"Harry","Sering","Retail Manager","Indianapolis, Indiana",75
+"Jennifer","West","Library Technician And Stage Manager","Salinas, California",75
+"Grayson","Holmes","Legal Assistant","Washington, D.C.",75
+"Lyle","Brenner","College Professor","Gainesville, Florida",76
+"Michael","Kalk","Retired Programmer","Austin, Texas",76
+"Grayson","Holmes","Legal Assistant","Washington, D.C.",76
+"Emily","Lawrence","An Attorney","Philadelphia, Pennsylvania",77
+"Dale","Masel","Professor","Lancaster, Ohio",77
+"Lyle","Brenner","College Professor","Gainesville, Florida",77
+"David","Camp","Student","Charlottesville, Virginia",78
+"Hugh","Price","An Engineer","Chevy Chase, Maryland",78
+"Dale","Masel","Professor","Lancaster, Ohio",78
+"Andrew","Locke","Lawyer","Etobicoke, Ontario, Canada",79
+"Elaine","Lang","Public Relations Executive","Vienna, Virginia",79
+"Janine","Menhennet","Homemaker","Pasadena, California",79
+"Nancy","Moeller","Homemaker","Atlanta, Georgia",80
+"Brent","Winter","Fashion Editor","Atlanta, Georgia",80
+"Janine","Menhennet","Homemaker","Pasadena, California",80
+"Eric","Berman","Journalist Originally","Crown Point, Indiana",81
+"John","Podhoretz","Writer","Washington, D.C.",81
+"Dave","Traini","Teacher","Medford Lakes, New Jersey",81
+"Jessica","Ayers","Tutor Originally","Walnut Ridge, Arkansas",82
+"Aaron","Thompson","An Executive Assistant","Washington, D.C.",82
+"Hugh","Price","An Engineer","Chevy Chase, Maryland",82
+"Michael","Galvin","Student","Shaker Heights, Ohio",83
+"Frank","Hughes","An Account Executive","Torrance, California",83
+"Richard","Cordray","Judicial Clerk","Grove City, Ohio",83
+"Zeke","Sevilla","JR., Lawyer","Vienna, Virginia",84
+"Keith","Walker","An Attorney","Pomona, California",84
+"Bob","Verini","Playwright/Actor","New York, New York",84
+"Jonathan","Fellows","Legislative Assistant Originally","Bellevue, Washington",85
+"Keith","Bell","Personnel Specialist","Alexandria, Virginia",85
+"Eugene","Finerman","Writer","Chicago, Illinois",85
+"Cathy","Shambaugh","Sixth Grade Teacher","Berea, Ohio",86
+"Eric","Swanson","Data Coordinator","Washington, D.C.",86
+"Bill","Unterborn","Visual Merchandiser","Palmyra, New York",86
+"Catherine","Ewen","Recent Law School Graduate","Berkeley, California",87
+"Paul","Boyer","Bartender Originally","Schenectady, New York",87
+"Aaron","Thompson","An Executive Assistant","Washington, D.C.",87
+"Kathleen","Hennessey","Pollution Control Board Member","Western Springs, Illinois",88
+"Stephen","Mcnamara","System Manager","New York City, New York",88
+"Pat","Healy","An Index Editor","Concord, California",88
+"David","Gibbs","An Editor And Graduate Student","Los Angeles, California",89
+"Christian","Mastrodonato","An Artist","San Francisco, California",89
+"Aaron","Thompson","An Executive Assistant","Washington, D.C.",89
+"Michelle","Martinez","Sports Agate Clerk","Chalmette, Louisiana",90
+"Adam","Brower","Graphic Artist","Chicago, Illinois",90
+"Bill","Unterborn","Visual Merchandiser","Palmyra, New York",90
+"Dan","Suzman","College Student Originally","Chevy Chase, Maryland",91
+"Laurie","Genevro Cole","An Adjunct Professor And Town Council Member","Vienna, Virginia",91
+"Aaron","Thompson","An Executive Assistant","Washington, D.C.",91
+"Roger","Storm","Teacher","Fairview Park, Ohio",92
+"Doug","Molitor","Writer","Brentwood, California",92
+"John","Ryan","An Economist","Santa Barbara, California",92
+"Roger","Storm","Teacher","Fairview Park, Ohio",93
+"Dave","Traini","Teacher","Medford Lakes, New Jersey",93
+"Richard","Cordray","Judicial Clerk","Grove City, Ohio",93
+"Larry","Haney","Retired Teacher","Buckner, Missouri",94
+"Eric","Schwendeman","Bookseller","Columbus, Ohio",94
+"Laurie","Genevro Cole","An Adjunct Professor And Town Council Member","Vienna, Virginia",94
+"Maura","Gatowski","Technology Manager","Beverly Hills, Michigan",95
+"Doug","Esker","An Engineer","Saint Marys, Pennsylvania",95
+"Eric","Schwendeman","Bookseller","Columbus, Ohio",95
+"Michael","Starsinic","Mathematical Statistician","Bowie, Maryland",96
+"Kerry","Breitenbach","Marketing Analyst","South Euclid, Ohio",96
+"Maura","Gatowski","Technology Manager","Beverly Hills, Michigan",96
+"Mia","Hasouris","An Apherisis Recruiter And Graduate Student","ST. Paul, Minnesota",97
+"David","Jackman","Doctor","Boston, Massachusetts",97
+"Kerry","Breitenbach","Marketing Analyst","South Euclid, Ohio",97
+"Inez","Friedman-Boyce","An Attorney","Newton, Massachusetts",98
+"Chris","Mullins","Computer Programmer","Louisville, Kentucky",98
+"Kerry","Breitenbach","Marketing Analyst","South Euclid, Ohio",98
+"Val","Nieman","College Professor And Writer","Greensboro, North Carolina",99
+"Harry","Hall","Systems Manager","Cleveland, Ohio",99
+"Kerry","Breitenbach","Marketing Analyst","South Euclid, Ohio",99
+"Nick","Hoffmann","Graduate Student","Pittsburgh, Pennsylvania",100
+"Alli","Hammond","College Instructor","Cincinnati, Ohio",100
+"Kerry","Breitenbach","Marketing Analyst","South Euclid, Ohio",100
+"Eugene","Finerman","Writer","Chicago, Illinois",101
+"Michael","Galvin","Student","Shaker Heights, Ohio",101
+"Doug","Molitor","Writer","Brentwood, California",101
+"Joshua","Allen","Student","North Hollywood, California",102
+"Ruchi","Aggarwal","An Accountant","Seattle, Washington",102
+"Kerry","Breitenbach","Marketing Analyst","South Euclid, Ohio",102
+"Jennie","Gerres","Surgical Technology Student","North Ridgeville, Ohio",103
+"Rick","Pernod","Teacher","The Bronx, New York",103
+"Joshua","Allen","Student","North Hollywood, California",103
+"Alex","Rubington","Marketing Communication Coordinator","Natick, Massachusetts",104
+"Jonathan","Henke","Researcher","Berkeley, California",104
+"Joshua","Allen","Student","North Hollywood, California",104
+"Eric","Berman","Journalist Originally","Crown Point, Indiana",105
+"Bob","Verini","Playwright/Actor","New York, New York",105
+"John","Ryan","An Economist","Santa Barbara, California",105
+"Tim","Russell","Teacher","Lancaster, Ohio",106
+"Leslie","Burns-Dell'acqua","Marketing Consultant","San Diego, California",106
+"Alex","Rubington","Marketing Communication Coordinator","Natick, Massachusetts",106
+"Patricia","Perlowski","Finance Administrator","Wheatley Heights, New York",107
+"Kevin","Montgomery","Divinity Student","Berkeley, California",107
+"Tim","Russell","Teacher","Lancaster, Ohio",107
+"Suzanne","Reeve","Graduate Student And Research Assistant","Redmond, Washington",108
+"Bud","Humphrey","An Editor","Park Ridge, Illinois",108
+"Tim","Russell","Teacher","Lancaster, Ohio",108
+"Barrett","Hildreth","Software Analyst","Portland, Oregon",109
+"Tom","Stenson","Law Student","Media, Pennsylvania",109
+"Bud","Humphrey","An Editor","Park Ridge, Illinois",109
+"Scott","Johnson","Radio Announcer","Lexington, Kentucky",110
+"Rosann","O'reilly","An Elementary School Teacher","The Bronx, New York",110
+"Bud","Humphrey","An Editor","Park Ridge, Illinois",110
+"Steve","Kaplan","Law Student","San Diego, California",111
+"Ali","Moss","College Student","Great Neck, New York",111
+"Bud","Humphrey","An Editor","Park Ridge, Illinois",111
+"Bob","Verini","Playwright/Actor","New York, New York",112
+"Eugene","Finerman","Writer","Chicago, Illinois",112
+"Dave","Traini","Teacher","Medford Lakes, New Jersey",112
+"Jen","Noon","An Editor","Woburn, Massachusetts",113
+"Jonathan","Smillie","Software Trainer","Jeffersonville, Indiana",113
+"Steve","Kaplan","Law Student","San Diego, California",113
+"Matt","Weedman","Graduate Student Originally","Johnson City, Tennessee",114
+"Ted","Stratton","Reporter","Cleveland Heights, Ohio",114
+"Jen","Noon","An Editor","Woburn, Massachusetts",114
+"Gardner","Stern","Marketing Consultant Originally","Chicago, Illinois",116
+"Nancy","Smith","Lawyer Originally","Gainesville, Florida",116
+"Steve","Willis","Financial Analyst","Lynwood, California",116
+"Katie","Heim","An Executive Assistant","Huntington Beach, California",117
+"Tom","Mcfarland","Graduate Student","Boulder, Colorado",117
+"Ted","Stratton","Reporter","Cleveland Heights, Ohio",117
+"Leila","Dooley","Reference Librarian","Vista, California",118
+"Bob","Shore","An Attorney","Los Angeles, California",118
+"Ted","Stratton","Reporter","Cleveland Heights, Ohio",118
+"Shane","Whitlock","College Student","Benton, Arkansas",119
+"Beverly","Spurs","Podiatrist","Concord, California",119
+"Mike","Dupée","An Attorney","Gainesville, Florida",119
+"Jimmy","LI","Senior","Chesterfield, Missouri",120
+"Vanamali","Compton","Junior","Clarkdale, Arizona",120
+"Michael","Braun","Junior","Silver Spring, Maryland",120
+"Kurt","Bray","Scientist","Oceanside, California",121
+"Rachael","Schwartz","An Attorney","Bedminster, New Jersey",121
+"Brian","Moore","PH.D. Candidate Originally","Pearland, Texas",121
+"Kerri","Regan","Senior","Bethpage, New York",122
+"Steve","Golden","Junior","Brookeville, Maryland",122
+"Ruvani","Fonseka","Junior","Grosse Pointe, Michigan",122
+"Whitney","Prince","Sophomore","Maryville, Tennessee",123
+"Allan","Long","Freshman","Tallahassee, Florida",123
+"Caitlin","Cook","Sophomore","Arden, North Carolina",123
+"Bruce","Simmons","Graduate Student","Minneapolis, Minnesota",125
+"Leszek","Pawlowicz","Materials Scientist","Phoenix, Arizona",125
+"Jerome","Vered","Writer","Studio City, California",125
+"Bruce","Cox","Computer Operations Analyst","Lakeside, California",126
+"Eric","Newhouse","Student And Winner Of Last Year's Teen Tournament","Sioux City, Iowa",126
+"Rich","Lerner","Lawyer","Pago Pago, American Samoa",126
+"Orlando","Zambrano","Junior","Tampa, Florida",127
+"Chloé","White","Senior","Mission Hills, Kansas",127
+"Peter","Severson","Senior","Sioux Falls, South Dakota",127
+"Murdock","Martin","Graduate Student Originally","Moss Point, Mississippi",128
+"Barbara","Prideaux","Teacher","ST. Charles, Missouri",128
+"Frank","Spangenberg","Police Officer","Flushing, New York",128
+"Anne","Shivers","Senior","Peotone, Illinois",129
+"Wes","Kovarik","Senior","Antioch, California",129
+"Amy","Fletcher","Junior","Cincinnati, Ohio",129
+"Orlando","Zambrano","Junior","Tampa, Florida",130
+"Anne","Shivers","Senior","Peotone, Illinois",130
+"Steve","Golden","Junior","Brookeville, Maryland",130
+"Scott","Holliday","Legal Word Processor","Hoboken, New Jersey",131
+"Jim","Mcleod","Regional Sales Manager","San Antonio, Texas",131
+"Leslie","Frates","Spanish Teacher","Hayward, California",131
+"Andy","Westney","Senior","Atlanta, Georgia",132
+"Joann","Chan","Senior","Richmond, Virginia",132
+"Robert","Fielding","Junior","Arcadia, California",132
+"Caitlin","Cook","Sophomore","Arden, North Carolina",133
+"Peter","Severson","Senior","Sioux Falls, South Dakota",133
+"Michael","Braun","Junior","Silver Spring, Maryland",133
+"Robert","Slaven","An Office Automation Specialist","Yellowknife, Northwest Territories, Canada",134
+"Richard","Kaplan","Retired Attorney","Los Angeles, California",134
+"John","Kelly","Retired Military Air Force Officer","Austin, Texas",134
+"Jimmy","LI","Senior","Chesterfield, Missouri",135
+"Wes","Kovarik","Senior","Antioch, California",135
+"Ruvani","Fonseka","Junior","Grosse Pointe, Michigan",135
+"Pat","Gmeiner","Copywriter","Rocky River, Ohio",136
+"David","Burnett","Freelance Photographer","New York, New York",136
+"Bob","Blake","An Actuary","Vancouver, British Columbia",136
+"Brad","Rutter","College Student","Lancaster, Pennsylvania",137
+"Regina","Sutton","Customer Service Representative","Birmingham, Alabama",137
+"David","Franklin","Filmmaker And Professor","Brooklyn, New York",137
+"Mike","Dugan","First-Year Law Student","Lauderdale, Minnesota",138
+"Annette","Wilkinson","Stay-At-Home Mom","Andover, Massachusetts",138
+"Brad","Rutter","College Student","Lancaster, Pennsylvania",138
+"Anne","Shivers","Senior","Peotone, Illinois",139
+"Wes","Kovarik","Senior","Antioch, California",139
+"Michael","Braun","Junior","Silver Spring, Maryland",139
+"Eric","Moore","Chemist And Writer","Brookline, Massachusetts",140
+"Ann","Marchand","An Internet News Producer","Washington, D.C.",140
+"Brad","Rutter","College Student","Lancaster, Pennsylvania",140
+"Eric","Terzuolo","Retired Diplomat And University Professor","Bergen, Noord-Holland, The Netherlands",142
+"Michael","Galvin","Consultant","Penn Wynne, Pennsylvania",142
+"Leslie","Frates","Spanish Teacher","Hayward, California",142
+"Jerod","Klein","Biology Teacher Originally","Fullerton, California",143
+"Tom","Nichols","Process Engineer Originally","Lemont, Illinois",143
+"Elizabeth","Salinas","Historic Interpreter","Silver Spring, Maryland",143
+"John","Genova","Teacher","Granada Hills, California",144
+"Rachael","Schwartz","Lawyer","Washington, D.C.",144
+"Michael","Rankins","Minister And Writer","Rohnert Park, California",144
+"Ron","Labuguen","Family Physician","Richmond, Virginia",145
+"Tracey","Marcus","An Education Coordinator","Homer City, Pennsylvania",145
+"Brad","Rutter","College Student","Lancaster, Pennsylvania",145
+"Arthur","Phillips","An Author","Brooklyn, New York",146
+"Babu","Srinivasan","History Professor","Houston, Texas",146
+"Melissa","Seal","Law Student","Kingston, Ontario, Canada",146
+"Laurence","Levy","Sweater Manufacturer","Queens, New York",147
+"Jim","Holton","History Professor","Lakeland, Florida",147
+"Brad","Rutter","College Student","Lancaster, Pennsylvania",147
+"Steve","Rogitz","Trucking Company Manager","Gardena, California",148
+"Roy","Holliday","Radiologist","Nyack, New York",148
+"Leslie","Frates","Spanish Teacher","Hayward, California",148
+"Janet","Wong","Development Officer For A Museum","Hoboken, New Jersey",149
+"Alan","Bailey","Playwright And Director","North Hills, California",149
+"David","Traini","High School Administrator","Moorestown, New Jersey",149
+"Doug","Molitor","Writer","Altadena, California",150
+"Mark","Mcdermott","Desktop Publisher Originally","Schaller, Iowa",150
+"Tom","Nosek","An Engineer","Torrance, California",150
+"Tom","Cubbage","An Attorney","Oklahoma City, Oklahoma",151
+"Bob","Harris","Writer","Los Angeles, California",151
+"Frank","Epstein","Police Officer","Los Angeles, California",151
+"Lionel","Goldbart","Newsstand Clerk","South Miami Beach, Florida",152
+"Frank","Spangenberg","Transit Cop","Douglaston, New York",152
+"Robert","Slaven","Research Officer","Yellowknife, Canada",152
+"Steve","Robin","Writer And Producer","Miami, Florida",153
+"Vinita","Kailasanath","Consultant","San Mateo, California",153
+"David","Sampugnaro","Writer And Internet Specialist","North White Plains, New York",153
+"Leslie","Frates","Spanish Teacher","Hayward, California",154
+"Tom","Nosek","An Engineer","Torrance, California",154
+"Frank","Spangenberg","Transit Cop","Douglaston, New York",154
+"Michael","Arnone","Writer And Editor","Alexandria, Virginia",155
+"Sahir","Islam","An Investment Analyst","Somers, New York",155
+"Bev","Schwartzberg","An Adult Literacy Program Coordinator","Santa Barbara, California",155
+"David","Sampugnaro","Writer And Consultant Originally","Elmsford, New York",157
+"Kathryn","Perry","Technical Consultant","Washington, D.C.",157
+"Gary","Fulcomer","An Air Force Attorney Originally","Allentown, Pennsylvania",157
+"Dan","Melia","College Professor","Berkeley, California",158
+"Jeremy","Bate","An Emergency Medical Technician And Writer","Tujunga, California",158
+"Brian","Wangsgard","From Salt Lake City, Utah",NA,158
+"Richard","Perez-Pena","Journalist Originally","Cuba",159
+"Kate","Waits","Law Professor","Albany, New York",159
+"Bruce","Naegeli","Librarian","Phoenix, Arizona",159
+"Stephen","Lebowitz","Physician","Los Angeles, California",160
+"Barbara-Anne","Eddy","Freelance Researcher","Vancouver, British Columbia",160
+"Roy","Holliday","Radiologist","Brooklyn, New York",160
+"Lance","Johnson","Model Aircraft Engine Technician","Champaign, Illinois",161
+"Mark","Eckard","An Entrepreneur","Bedford, Massachusetts",161
+"Kermin","Fleming","Junior At Carnegie Mellon University","Lexington, Kentucky",161
+"Jack","Archey","An Actor And Writer","Los Angeles, California",162
+"Sandra","Gore","Corporate Researcher","Berkeley, California",162
+"Michael","Dupée","An Attorney","Gainesville, Florida",162
+"Jeff","Richmond","An Attorney","Los Angeles, California",163
+"Billy","Baxter","An Attorney","Richmond, Virginia",163
+"Bernard","Holloway","Sophomore At The University Of North Carolina At Chapel Hill","Chapel Hill, North Carolina",163
+"Peggy","Kennedy","Forensic Toxicologist And Winner Of The 1988 Seniors Tournament","Menands, New York",164
+"Michael","Rankins","Minister And Writer","Rohnert Park, California",164
+"Steven","Popper","An Economist Originally","Minneapolis, Minnesota",164
+"Michael","Reilly","Maitre D'","Fullerton, California",165
+"Steve","Robinson","Salesperson And Student","Santa Monica, California",165
+"Lisa","Guay","Homemaker","Champlain, New York",165
+"Carolyn","Cracraft","Grad Student At The University Of California-Berkeley","Berkeley, California",166
+"Tom","Nosek","An Aerospace Engineer","Torrance, California",166
+"John","Beck","Creative Director","Torrance, California",166
+"Michael","Block","Student And Winner Of The 1988 Teen Tournament","Staten Island, New York",167
+"Sandra","Gore","Researcher Originally","Boston, Massachusetts",167
+"Bruce","Seymour","Writer","Piedmont, California",167
+"Al","Lin","Law Professor","Davis, California",168
+"Leszek","Pawlowicz","Computer Consultant","Flagstaff, Arizona",168
+"Tad","Carithers","An Attorney","New York City, New York",168
+"Ron","Trigueiro","Student","Carruthers, California",169
+"Mark","Lowenthal","State Department Employee","Reston, Virginia",169
+"Leah","Greenwald","An Architect","Cambridge, Massachusetts",169
+"Roy","Holliday","Radiologist","Brooklyn, New York",170
+"Peggy","Kennedy","Forensic Toxicologist And Winner Of The 1988 Seniors Tournament","Menands, New York",170
+"Bruce","Naegeli","Librarian","Phoenix, Arizona",170
+"Mark","Lowenthal","State Department Employee","Reston, Virginia",171
+"Kate","Waits","Law Professor","Albany, New York",171
+"Michael","Rankins","Minister And Writer","Rohnert Park, California",171
+"Michelle","Clum","An Executive Assistant Originally","Wichita, Kansas",172
+"Jerome","Vered","Writer","Los Angeles, California",172
+"Jim","Scott","An Attorney","Arlington, Virginia",172
+"Frank","Selevan","An Advertising Copywriter Originally","Miami, Florida",173
+"Lois","Feinstein","Freelance Copywriter Originally","Plainview, New York",173
+"Greg","Hopkins","An Energy Demonstrator","Waverly, Ohio",173
+"Paul","Schaeffer","Registered Nurse Originally","Philadelphia, Pennsylvania",174
+"Lynne","Crawford","Carpenter Originally","West Springfield, Massachusetts",174
+"Greg","Hopkins","An Energy Demonstrator","Waverly, Ohio",174
+"Fred","Ramen","Database Developer And Writer","New York, New York",175
+"Jennifer","Wu","High School Junior","Arkadelphia, Arkansas",175
+"Lee","Lassiter","Data Modeler","Topeka, Kansas",175
+"Kevin","Keach","Project Administrator","ST. Louis, Missouri",176
+"Bruce","Borchardt","Metrologist","Washington, D.C.",176
+"Diane","Siegel","An Educational Consultant And Writer","Northridge, California",176
+"Michael","Ellington","JR., Police Officer","Los Angeles, California",177
+"Nancy","Teri","Stockbroker Originally","Wanatah, Indiana",177
+"Gunther","Murley","Construction Manager","Palos Verdes, California",177
+"Sandra","Gore","Researcher Originally","Boston, Massachusetts",178
+"Steven","Popper","An Economist Originally","Minneapolis, Minnesota",178
+"Richard","Perez-Pena","Journalist Originally","Cuba",178
+"Denise","Stewart","Literary Agent","Venice, California",179
+"Larry","Silverman","Middle School Vice-Principal","Banning, California",179
+"Nancy","Teri","Stockbroker Originally","Wanatah, Indiana",179
+"Howard","Wilson","Househusband","Montclair, California",180
+"Lorrie","Farrely","An Elementary School Teacher","Orange, California",180
+"Larry","Silverman","Middle School Vice-Principal","Banning, California",180
+"Mark","Lowenthal","State Department Employee","Reston, Virginia",181
+"Sandra","Gore","Researcher Originally","Boston, Massachusetts",181
+"Bruce","Naegeli","Librarian","Phoenix, Arizona",181
+"Paul","Boymel","Civil Rights Attorney","Potomac, Maryland",183
+"Andrew","Garen","An Associate Director Of Consumer Marketing","Austin, Texas",183
+"Ed","Schiffer","An Attorney","San Francisco, California",183
+"Brian","Keliher","Museum Educator","San Diego, California",184
+"Dan","Melia","Professor","San Francisco, California",184
+"Patrick","Friel","Teaching Assistant Originally","Philadelphia, Pennsylvania",184
+"Grace","Veach","Librarian","Lakeland, Florida",185
+"Keith","Williams","Sophomore At Middlebury College","Middlebury, Vermont",185
+"John","Ledonne","Bookstore Manager","Concord, New Hampshire",185
+"Michael","Dupee","An Attorney","Cleveland, Ohio",186
+"Ron","Jin","School Librarian","San Francisco, California",186
+"Rick","Blumenfeld","Research Attorney","Albuquerque, New Mexico",186
+"Ann","Taliaferro Curtaz","An Executive Secretary","San Carlos, California",187
+"Michael","Dupee","An Attorney","Cleveland, Ohio",187
+"Ron","Jin","School Librarian","San Francisco, California",187
+"Michael","Rooney","College Instructor","Pasadena, California",188
+"Christian","De Jong","Customer Service Representative","Los Angeles, California",188
+"Lindsay","Peet","Plumbing Contractor","Studio City, California",188
+"Barbara-Anne","Eddy","Civil Servant","Vancouver, Canada",189
+"Ryan","Holznagel","Writer Originally","Forest Grove, Oregon",189
+"John","Kelly","Retired Air Force Officer","Austin, Texas",189
+"Michael","Daunt","An Accountant","Waterloo, Ontario, Canada",190
+"Mike","Dupée","An Attorney","Gainesville, Florida",190
+"Bob","Scarpone","An Attorney","Flanders, New Jersey",190
+"Chris","Ward","Foreign Service Officer","Lima, Peru",191
+"Jane","Jessell","Travel Agent","Bozeman, Montana",191
+"Michelle","Covert","Navy Wife Originally","Fort Lewis, Washington",191
+"Susan","Fritsch-Cohen","Marketing Vice President Originally","Cherry Hill, New Jersey",192
+"Mike","Hill","Geologist Originally","Milwaukee, Wisconsin",192
+"Chris","Ward","Foreign Service Officer","Lima, Peru",192
+"Chris","Ward","Foreign Service Officer","Johannesburg, South Africa",193
+"Elaine","Zollner","Physician","Glendale, California",193
+"Mark","Dawson","Business Manager","Chamblee, Georgia",193
+"Tami","Whitney","College Professor","Omaha, Nebraska",194
+"Dave","Stone","Researcher","New Haven, Connecticut",194
+"Chris","Ward","Foreign Service Officer","Lima, Peru",194
+"John","Fedoryn","An Advertising Advisor","Chicago, Illinois",196
+"Stephanie","Thomas","An Attorney","Decatur, Georgia",196
+"Chris","Ward","Foreign Service Officer","Lima, Peru",196
+"Isaac","Segal","An Advertising Creative Director","Cherry Hill, New Jersey",197
+"Ryan","Holznagel","Software Writer","Forest Grove, Oregon",197
+"David","Siegel","Paralegal","Los Angeles, California",197
+"Michael","Rooney","College Professor","Pasadena, California",198
+"Mark","Lowenthal","An Assistant Director For The Central Intelligence Agency","Reston, Virginia",198
+"Erik","Larsen","Librarian And A Licensed Amateur Boxing Official","Jacksonville, Florida",198
+"Sharon","Paterson","Marketing Executive","Saline, Michigan",199
+"Jake","Martin","An Undergraduate Student","Knoxville, Tennessee",199
+"Chris","Ward","Foreign Service Officer","Lima, Peru",199
+"Michael","Day","An Attorney","Mill Valley, California",200
+"Pam","Mueller","An Entering Law Student Originally","Chicago, Illinois",200
+"Jay","Rosenberg","College Professor","Chapel Hill, North Carolina",200
+"John","Hart","Sales Executive","Portland, Oregon",201
+"Rebecca","Rhyne","Writer's Assistant Originally","Austin, Texas",201
+"Christopher","Ruth","Musician And Songwriter","New London, Connecticut",201
+"Steve","Newman","Partner In A Small Computer Company","Rockville, Maryland",202
+"Andrew","Westney","Singer And Actor","Atlanta, Georgia",202
+"David","Siegel","Paralegal","Los Angeles, California",202
+"Norm","Nadel","Lawyer","Beverly Hills, California",203
+"Amy","Solomon","Consultant","Seattle, Washington",203
+"Christopher","Ruth","Musician And Songwriter","New London, Connecticut",203
+"Doug","Lach","Product Development Manager","Columbus, Ohio",204
+"Cori","Collins","Perfusionist","Conyers, Georgia",204
+"Glen","Savory","An Air Force Contracting Officer Originally","Georgetown, Massachusetts",204
+"Jeff","Chrzanowski","Computer Engineer Originally","Marlton, New Jersey",205
+"Kathy","Currid","Trade Compliance Specialist","Valley Stream, New York",205
+"Christopher","Ruth","Musician And Songwriter","New London, Connecticut",205
+"Becky","Benjamin","Law Student","Miami, Florida",206
+"Eddie","Timanus","Sportswriter","Reston, Virginia",206
+"Keith","Lorasch","Music Educator","Eau Claire, Wisconsin",206
+"Dennis","Donohue","General Manager","Janesville, Wisconsin",207
+"Mike","Thayer","Mathematics Teacher","North Plainfield, New Jersey",207
+"Chris","Miller","Retail Specialist","Louisville, Kentucky",207
+"Doug","Lach","Marketing Manager","Columbus, Ohio",208
+"Leah","Greenwald","An Architect","Cambridge, Massachusetts",208
+"Matt","Morris","Financial Analyst Originally","Louisville, Kentucky",208
+"Suzanne","Parker","Language Arts Teacher Originally","Russellville, Kentucky",209
+"Christopher","Ruth","Musician And Songwriter","New London, Connecticut",209
+"Merle","Milder","Housewife","Edison, New Jersey",209
+"Janice","Bosley","Senior Programmer Analyst","Baltimore, Maryland",210
+"Steve","Hettinger","Waiter","Evansville, Indiana",210
+"Eric","Prosser","An Attorney","Oceanside, California",210
+"Bob","Ryffel","Computer Expert","Fairfield, Connecticut",211
+"Jennifer","Abbots","Salesperson","Albuquerque, New Mexico",211
+"Eric","Prosser","An Attorney","Oceanside, California",211
+"Billy","Mason-Dennis","Data Conversion Operator","Berryville, Virginia",212
+"Andrew","Hoenig","An Attorney Originally","Radnor, Pennsylvania",212
+"Bob","Ryffel","Computer Expert","Fairfield, Connecticut",212
+"Paul","Showalter","Customer Service Representative Originally","Irongate, Virginia",213
+"Merle","Milder","Housewife","Edison, New Jersey",213
+"Bob","Ryffel","Computer Expert","Fairfield, Connecticut",213
+"Carol","Tierney","Program Manager Originally","Cambridge, Massachusetts",214
+"Boze","Hadleigh","Writer","Beverly Hills, California",214
+"Jeff","Chrzanowski","Computer Engineer Originally","Marlton, New Jersey",214
+"Bridget","Boyd","Federal Civil Servant","Perry, Georgia",215
+"Paul","Marte","Publishing Project Coordinator","New York, New York",215
+"Boze","Hadleigh","Writer","Beverly Hills, California",215
+"Rob","Carlisle","An Engineer Originally","Haslemere, England",216
+"Bill","Johnson","Cattle Breeder","Fort Mill, South Carolina",216
+"Bridget","Boyd","Federal Civil Servant","Perry, Georgia",216
+"David","Cruthers","An Arts Council Director","Groton Long Point, Connecticut",217
+"Maryanne","Ackershoek","An Associate Editor And Online Writer","Wayne, New Jersey",217
+"Bill","Johnson","Cattle Breeder","Fort Mill, South Carolina",217
+"Barbara","Byrne","Criminal Defense Lawyer","Queens, New York",218
+"Michael","Collin","Piano Salesman","Barrington, Illinois",218
+"Maryanne","Ackershoek","An Associate Editor And Online Writer","Wayne, New Jersey",218
+"Jean","Grewe","Graphic Designer","Oak Park, Illinois",219
+"Eddie","Timanus","Sportswriter","Oak Hill, Virginia",219
+"Jonathan","Groff","Writer And Producer For Television","Los Angeles, California",219
+"Grace","Veach","Librarian","Decatur, Illinois",220
+"Steve","Mcmanus","Systems Administrator","Columbia, South Carolina",220
+"Joyce","Sturgill","Remedial English Teacher","Fort Pierce, Florida",220
+"Brian","Moore","An Astronomer","Houston, Texas",221
+"Dan","Katz","Lawyer","Owings Mills, Maryland",221
+"John","Zhang","Freshman At Mit Originally","Lexington, Kentucky",221
+"Boris","Levit","Film Technician And Audio Editor","Israel",222
+"Per","Gunnar Hillesoy","An Assistant Dean Of Students","Norway",222
+"Michael","Daunt","An Accountant","Canada",222
+"Julia","Lazarus","Fundraiser","New York, New York",224
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",224
+"Jerry","Harvey","Freelance Educator Originally","California, Missouri",224
+"Russ","Schumacher","Graduate Student And Newlywed","Fort Collins, Colorado",225
+"Bill","Pitassy","Lawyer","Roselle Park, New Jersey",225
+"Robert","Slaven","Technical Products Specialist Originally","Yellowknife, Northwest Territories, Canada",225
+"Christian","Stallsmith","Naval Engineer","Arlington, Virginia",226
+"Lori","Drummond","High School Teacher","Rockford, Illinois",226
+"Paul","Roder","Systems Engineer","Tinton Falls, New Jersey",226
+"Shane","Whitlock","Resident Physician","Little Rock, Arkansas",227
+"John","Ryan","Corporate Controller","Richmond, California",227
+"Lynne","Wexler","Librarian","Evanston, Illinois",227
+"Rokshana","Thanadar","Graduate Student","Suffolk, Virginia",228
+"Bradley","Goodwill","An Actor","New York City, New York",228
+"Michael","Collin","Piano Salesman","Barrington, Illinois",228
+"Kim","Lynn","Program Manager","Warner Robins, Georgia",229
+"Ken","Costa","Newspaper Editor","San Mateo, California",229
+"Bradley","Goodwill","An Actor","New York City, New York",229
+"Paul","Mccudden","Screenwriter","Los Angeles, California",230
+"Jenny","Smoyer","Legal Assistant And Undergraduate Student","San Jose, California",230
+"Pat","Healy","An Index Editor","Concord, California",230
+"Pat","Healy","An Index Editor","Concord, California",231
+"Lisa","Van Every","An Office Manager","Seattle, Washington",231
+"Bradley","Goodwill","An Actor","New York City, New York",231
+"Denise","Berger","An Office Manager","Los Angeles, California",232
+"Steve","Northey","Metal Artist And Fabricator","Seattle, Washington",232
+"Pat","Healy","An Index Editor","Concord, California",232
+"Jamie","Weiss","Law Student","ST. Louis, Missouri",233
+"Jeff","Stewart","An Executive","Los Alamos, New Mexico",233
+"Michael","Daunt","An Accountant","Oakville, Ontario, Canada",233
+"Harry","Bork","Library Director","Antioch, Illinois",234
+"Mark","Picus","College Instructor","Houston, Texas",234
+"Lynne","Wexler","Librarian","Evanston, Illinois",234
+"Phoebe","Juel","Bookseller","Sylva, North Carolina",235
+"Steve","Berman","Teacher","Santa Monica, California",235
+"Brad","Plovan","An Attorney","Baltimore, Maryland",235
+"Diane","Fisher","An Energy Resources Scientist","Oakland, California",236
+"Nathan","Aldrich","Part-Time Teacher Originally","Skowhegan, Maine",236
+"Pat","Healy","An Index Editor","Concord, California",236
+"Chacko","George","Senior At The University Of Texas At Austin","Austin, Texas",237
+"Eugene","Finerman","Writer","Northbrook, Illinois",237
+"Tom","Nichols","Professor Originally","Chicopee, Massachusetts",237
+"Bob","Blake","An Actuary","Vancouver, British Columbia, Canada",238
+"John","Cuthbertson","An Investment Analyst","San Diego, California",238
+"Bruce","Ikawa","College Professor","Hillsdale, Michigan",238
+"Pamela","Friedl","Waitress Originally","Grand Rapids, Michigan",239
+"Dave","Grove","An Executive Assistant","Los Angeles, California",239
+"Michael","Rooney","College Instructor","Pasadena, California",239
+"Fred","Ramen","An Assistant Editor","New York, New York",240
+"Cathi","Pedersen","Transcriptionist","Key West, Florida",240
+"Shawn","Askew","Space Camp Counselor And Student","Huntsville, Alabama",240
+"Courtney","Caudill","Historian And Writer","Mcarthur, Ohio",241
+"Fred","Ramen","An Assistant Editor","New York, New York",241
+"Shawn","Askew","Space Camp Counselor And Student","Huntsville, Alabama",241
+"Bill","Sloan","Realtor","Mission Viejo, California",242
+"India","Cooper","An Actor And Copy Editor","New York, New York",242
+"Fraser","Woodford","An Investment Banker","New York, New York",242
+"Kyle","Hale","College Senior","Katy, Texas",243
+"Pat","Healy","An Index Supervisor","Vallejo, California",243
+"Bernie","Cullen","Biologist","Santa Barbara, California",243
+"Betsy","Schiltz","Graduate Student","Durham, North Carolina",244
+"Brian","Benson","Stagehand","Hyattsville, Maryland",244
+"Fred","Ramen","An Assistant Editor","New York, New York",244
+"Rick","Knutsen","Musician And Stay-At-Home Dad","Brooklyn, New York",245
+"Craig","Barker","An Advanced Placement History Teacher","Livonia, Michigan",245
+"Amy","Fine","Part-Time Teacher","Bethesda, Maryland",245
+"Hilary","Hill","Homemaker Originally","Roselle, New Jersey",246
+"Chuck","Forrest","Student","Grand Blanc, Michigan",246
+"Dane","Garrett","Lawyer","Collinsville, Illinois",246
+"Gina","Ruttle","Housewife","Palos Park, Illinois",247
+"Tom","Stewart","An Airline Employee","Las Vegas, Nevada",247
+"Fred","Ramen","An Assistant Editor","New York, New York",247
+"Bruce","Naegeli","Retired Law Librarian","Phoenix, Arizona",248
+"Graham","Gilmer","Senior At Stanford University","Stanford, California",248
+"Tom","Halpern","Lawyer Originally","New York, New York",248
+"Scott","Davidson","An Electrical Engineer","Fremont, California",249
+"Karen","Douglas","Librarian","Manassas, Virginia",249
+"Fred","Ramen","An Assistant Editor","New York, New York",249
+"Kurt","Bray","Scientist","Oceanside, California",250
+"Matt","Zielenski","Research Analyst Originally","Broadview Heights, Ohio",250
+"Bob","Fleenor","Newspaper Copy Editor","Martinsburg, West Virginia",250
+"Mike","Mcclain","Financial Consultant Originally","Alliance, Ohio",251
+"Ayofemi","Stowe","Design Engineer Originally","Boston, Massachusetts",251
+"Chuck","Forrest","Student","Grand Blanc, Michigan",251
+"Cindy","Jacques","School Librarian","Franklin, North Carolina",252
+"Brien","Wholey","Graduate Student","Farmington, Connecticut",252
+"Michael","Rooney","College Instructor","Pasadena, California",252
+"Janet","Vangrasstek","An International Trade Reporter","Washington, D.C.",253
+"Atish","Choudhury","An Undergraduate Student","Silver Spring, Maryland",253
+"Dan","Melia","Professor","San Francisco, California",253
+"Karen","Rhodes","History Teacher","Dalton, Georgia",254
+"Atish","Choudhury","An Undergraduate Student","Silver Spring, Maryland",254
+"Dan","Melia","Professor","San Francisco, California",254
+"Larry","Cloud","Bookkeeper And Computer Consultant","Inglewood, California",255
+"April","Mcmanus","Homemaker","Hertfordshire, England",255
+"Paul","Thompson","Human Resources Manager","Cheverly, Maryland",255
+"Wayne","Weil","Management Consultant","New York, New York",256
+"Beth","Reardon","School Librarian","Chattanooga, Tennessee",256
+"Dan","Melia","Professor","San Francisco, California",256
+"Hap","Erstein","Theater Critic","West Palm Beach, Florida",257
+"Barbara","Findley","Math Teacher","Hurley, New York",257
+"Dan","Melia","Professor","San Francisco, California",257
+"Dave","Willis","Business Manager","Ventura, California",258
+"Andrew","Hutchings","Graduate Student","Ithaca, New York",258
+"Lan","Djang","Health Policy Analyst","Toronto, Ontario, Canada",258
+"Paul","Gutowski","An Alcohol And Drug Counselor","Rockford, Illinois",259
+"Mark","Born","Musician, Writer And Teacher","Bangkok, Thailand",259
+"Dave","Abbott","Musician And Licensing Executive","Fort Thomas, Kentucky",259
+"Bill","Dickenson","College Instructor","Richardson, Texas",260
+"Michael","Braun","High School Junior","Silver Spring, Maryland",260
+"Lara","Robillard","Policy Analyst","Arlington, Virginia",260
+"Paul","Gutowski","Substance Abuse Counselor","Rockford, Illinois",261
+"Victoria","Esser","Homemaker And Writer","Lansing, Michigan",261
+"Kim","Mihalick","Bartender","Merrillville, Indiana",261
+"Phil","Yellman","Legal Assistant","Seattle, Washington",262
+"Trevor","Norris","Budget Analyst","Washington, D.C.",262
+"Josh","Denhartog","An Actuarial Technician","Thousand Oaks, California",262
+"Franco","Recchia","Senior","Wayne State University",263
+"Kimberly","Bartlett","Senior","The University Of Alabama",263
+"Scott","Gillispie","Senior","Georgia Tech",263
+"Bill","Mcculla","Researcher","Gaithersburg, Maryland",264
+"Dan","Milliman","College Administrator Originally","Penn Yan, New York",264
+"Frank","Spangenberg","Police Officer","Flushing, New York",264
+"David","Kahn","Law Student","Brookline, Massachusetts",265
+"Jan","Ford","Quality Control Inspector","San Antonio, Texas",265
+"Frank","Spangenberg","Police Officer","Flushing, New York",265
+"David","Venderbush","Lawyer","New York, New York",266
+"Scott","Gillispie","Project Manager And Expectant Father","Atlanta, Georgia",266
+"Steven","Popper","An Economist","Topanga, California",266
+"Roy","Holliday","Radiologist","Nyack, New York",267
+"Steve","Chernicoff","Technical Writer","Berkeley, California",267
+"Ben","Lyon","An Industrial Scaleman","Dallas, Texas",267
+"Dan","Melia","College Professor","Berkeley, California",268
+"Rick","Knutsen","Musician And Stay-At-Home Dad","Brooklyn, New York",268
+"Kyle","Hale","College Senior","Katy, Texas",268
+"Arthur","Phillips","Speechwriter","Boston, Massachusetts",269
+"Ellen","Auerbach","Program Analyst","Washington, D.C.",269
+"Wes","Ulm","Medical Student","Alexandria, Virginia",269
+"Robin","Carroll","Researcher","Marietta, Georgia",270
+"Ted","Kissell","Journalist","Miami, Florida",270
+"Charles","Hubert","Developer","Tucker, Georgia",270
+"India","Cooper","An Actor And Copy Editor","New York, New York",271
+"Scott","Gillispie","Project Manager And Expectant Father","Atlanta, Georgia",271
+"Steve","Chernicoff","Technical Writer","Berkeley, California",271
+"Michael","Daunt","An Accountant","Oakville, Ontario, Canada",272
+"Bob","Harris","Writer","Los Angeles, California",272
+"Bruce","Borchardt","Metrologist","Washington, D.C.",272
+"Fred","Ramen","Database Developer And Writer","New York, New York",273
+"Tom","Walsh","Writer","Washington, D.C.",273
+"Michael","Rooney","College Professor","Pasadena, California",273
+"Cecile","Myers","Research Biologist","Ambler, Pennsylvania",274
+"Henry","Zanetti","U.S. Customs Manager","Little Neck, New York",274
+"Aaron","Gershowitz","Refugee Resettlement Coordinator","New York City, New York",274
+"Barbara","Pixley","Teacher Originally","Lincoln, Nebraska",275
+"Monica","Nishida","Nursing Assistant","Granada Hills, California",275
+"Lois","Kurowski","Doctoral Student","Elkhart, Indiana",275
+"Don","Kaufman","Bartender","Harlan, Iowa",276
+"Abby","Knight","Stay-At-Home Mom","Rainbow City, Alabama",276
+"Michael","Rooney","College Instructor","Pasadena, California",276
+"Margaret","Shufeldt","Homemaker And PH.D. Candidate","Atlanta, Georgia",277
+"Louis","Cohen","Language Teacher","Waterford, Connecticut",277
+"Jesse","Lewis","Copy Editor","Fanwood, New Jersey",277
+"Elena","Mcfann","Vice President Of Network Management","Long Beach, California",278
+"Andy","Miller","Foreign Service Officer","Tel Aviv, Israel",278
+"Michael","Rooney","College Instructor","Pasadena, California",278
+"Shane","Whitlock","Resident Physician","Little Rock, Arkansas",279
+"Eric","Newhouse","Director Of Technical Assistance","Sioux City, Iowa",279
+"Steve","Berman","Teacher","Santa Monica, California",279
+"Lyn","Payne","Librarian","Orlando, Florida",280
+"Fred","Ramen","An Assistant Editor","New York City, New York",280
+"Kim","Worth","Freelance Writer And Stand-Up Comedian","Venice, California",280
+"Brian","Moore","An Astronomer","Houston, Texas",281
+"Vinita","Kailasanath","Consultant","San Mateo, California",281
+"Mark","Eckard","An Entrepreneur","Bedford, Massachusetts",281
+"Jerome","Vered","Writer","Los Angeles, California",282
+"Sean","Ryan","Graduate Student","Whitehall, Pennsylvania",282
+"Leah","Greenwald","An Architect","Cambridge, Massachusetts",282
+"Josh","Den Hartog","Teen Tournament Winner","Otley, Iowa",283
+"Claudia","Perry","Pop Music Critic","Jersey City, New Jersey",283
+"Paul","Gutowski","Counselor","Rockford, Illinois",283
+"Michael","Dupée","An Attorney","Gainesville, Florida",284
+"Eugene","Finerman","Writer","Northbrook, Illinois",284
+"Robert","Slaven","Technical Products Specialist Originally","Yellowknife, Northwest Territories, Canada",284
+"Leonard","Schmidt","An Optometrist And 1992 Seniors Tournament Champion","Pittsburgh, Pennsylvania",285
+"Robert","Slaven","An Office Automation Specialist","Yellowknife, Northwest Territories, Canada",285
+"Jerome","Vered","Writer","Studio City, California",285
+"Craig","Barker","College Tournament Winner","Livonia, Michigan",286
+"Peter","Scott","An Advertising Manager","Washington, D.C.",286
+"Dan","Melia","Professor","San Francisco, California",286
+"Steve","Newman","Partner In A Small Computer Company","Rockville, Maryland",287
+"Matt","Zielenski","Research Analyst Originally","Broadview Heights, Ohio",287
+"Robin","Carroll","An Instructional Designer","Marietta, Georgia",287
+"David","Traini","High School Administrator","Moorestown, New Jersey",288
+"Chris","Miller","Retail Specialist","Louisville, Kentucky",288
+"Ryan","Holznagel","Writer Originally","Forest Grove, Oregon",288
+"Jeff","Richmond","An Attorney","Los Angeles, California",289
+"Lan","Djang","Health Policy Analyst","Toronto, Ontario, Canada",289
+"Mark","Dawson","Business Manager","Chamblee, Georgia",289
+"Jim","Vercolen","Part-Time Teacher","Rochester, New York",290
+"Matt","Zielenski","Teen Tournament Winner","Broadview Heights, Ohio",290
+"David","Siegel","Paralegal","Los Angeles, California",290
+"Bruce","Naegeli","Retired Law Librarian","Phoenix, Arizona",291
+"Brad","Rutter","Tv Quiz Show Host","Lancaster, Pennsylvania",291
+"John","Beck","Creative Director","Torrance, California",291
+"Claudia","Perry","Pop Music Critic","Jersey City, New Jersey",292
+"Dan","Melia","Professor","San Francisco, California",292
+"Fred","Ramen","An Assistant Editor","New York City, New York",292
+"Brian","Weikle","Consultant","Minneapolis, Minnesota",293
+"Michael","Rankins","Minister And Writer","Rohnert Park, California",293
+"Grace","Veach","Librarian","Lakeland, Florida",293
+"René","Garcia","Law Firm Purchasing Agent","Culver City, California",294
+"Claudia","Wolfe","An Advertising Copywriter Originally","Chevy Chase, Maryland",294
+"Chuck","Forrest","Student","Grand Blanc, Michigan",294
+"Bob","Devlin","An Industrial Training Director Originally","Pittsburgh, Pennsylvania",295
+"Marylou","Byrne","Law Student","Los Angeles, California",295
+"Chuck","Forrest","Student","Grand Blanc, Michigan",295
+"Brad","Rutter","Network Administrator","Lancaster, Pennsylvania",296
+"Bob","Fleenor","Newspaper Copy Editor","Martinsburg, West Virginia",296
+"Doug","Lach","Marketing Manager","Columbus, Ohio",296
+"Linda","Alznauer","Student And An Actress Originally","Los Angeles, California",297
+"Susan","Mcgowan","An Office Automation Manager","San Francisco, California",297
+"Chuck","Forrest","Student","Grand Blanc, Michigan",297
+"Arthur","Phillips","An Author","Brooklyn, New York",298
+"Pam","Mueller","An Entering Law Student Originally","Chicago, Illinois",298
+"Eric","Terzuolo","Retired Diplomat And University Professor","Bergen, Noord-Holland, The Netherlands",298
+"Michael","Rooney","College Instructor","Pasadena, California",299
+"Lee","Lassiter","Computer Programmer","Topeka, Kansas",299
+"Robin","Carroll","Research Assistant","Marietta, Georgia",299
+"John","Cuthbertson","An Investment Analyst","San Diego, California",300
+"Tad","Carithers","An Attorney","New York City, New York",300
+"Bob","Verini","Director Of Academics For A National Test Preparation Company","Los Angeles, California",300
+"Paul","Gutowski","An Alcohol And Drug Counselor","Rockford, Illinois",301
+"Bev","Schwartzberg","An Adult Literacy Program Coordinator","Santa Barbara, California",301
+"Frank","Spangenberg","Police Lieutenant","Douglaston, New York",301
+"Rachael","Schwartz","An Attorney","Bedminster, New Jersey",302
+"David","Hillinck","High School Principal","Sacramento, California",302
+"John","Cuthbertson","Physicist","San Diego, California",302
+"David","Venderbush","An Attorney","Los Angeles, California",303
+"Brian","Moore","PH.D. Candidate Originally","Pearland, Texas",303
+"Steve","Chernicoff","Technical Writer","Berkeley, California",303
+"Lara","Robillard","Policy Analyst","Arlington, Virginia",304
+"Phil","Yellman","Legal Assistant","Seattle, Washington",304
+"Chuck","Forrest","Lawyer","Bosnia And Herzegovina",304
+"Jonathan","Groff","Writer And Producer For Television","Los Angeles, California",305
+"Ed","Schiffer","An Attorney","San Francisco, California",305
+"April","Mcmanus","Homemaker","Hertfordshire, England",305
+"April","Mcmanus","Bookstore Clerk And 1992 Teen Tournament Champion Originally","Woodbury, Minnesota",306
+"Richard","Kaplan","Retired Attorney","Los Angeles, California",306
+"Leszek","Pawlowicz","Materials Scientist","Phoenix, Arizona",306
+"David","Duchovny","Brilliant Fbi Paranormal Investigator In Fox Mulder","The X-Files Originally From New York, New York",307
+"Lynn","Redgrave","An International Star Who Sparkles On Stage, Screen, And Television Originally","London, England",307
+"Stephen","King","Stellar Name In Bookstores And At The Box Office, The World's Best-Selling Author","Bangor, Maine",307
+"Jeff","Stewart","College Tournament Winner Originally","The Dalles, Oregon",308
+"John","Cuthbertson","Physicist","San Diego, California",308
+"Steve","Chernicoff","Technical Writer","Berkeley, California",308
+"Michael","Rooney","College Professor","Pasadena, California",309
+"Brad","Rutter","Tv Quiz Show Host","Lancaster, Pennsylvania",309
+"Steve","Chernicoff","Technical Writer","Berkeley, California",309
+"Brian","Moore","An Astronomer","Houston, Texas",310
+"Phil","Yellman","Legal Assistant","Seattle, Washington",310
+"Pam","Mueller","An Entering Law Student Originally","Chicago, Illinois",310
+"Frank","Spangenberg","Police Lieutenant","Douglaston, New York",311
+"Grace","Veach","Librarian","Lakeland, Florida",311
+"Shane","Whitlock","Resident Physician","Little Rock, Arkansas",311
+"April","Mcmanus","Homemaker","Hertfordshire, England",312
+"Robert","Slaven","Technical Products Specialist Originally","Yellowknife, Northwest Territories, Canada",312
+"John","Cuthbertson","An Investment Analyst","San Diego, California",312
+"Lan","Djang","Health Policy Analyst","Toronto, Ontario, Canada",313
+"Chris","Miller","Retail Specialist","Louisville, Kentucky",313
+"Matt","Zielenski","Research Analyst Originally","Broadview Heights, Ohio",313
+"Michael","Daunt","An Accountant","Oakville, Ontario, Canada",314
+"Dan","Melia","College Professor","Berkeley, California",314
+"Jerome","Vered","Writer","Los Angeles, California",314
+"Jill","Young","Junior","Oshkosh, Wisconsin",316
+"April","Mcmanus","Senior","Woodbury, Minnesota",316
+"Cori","Van Noy","Sophomore","San Diego, California",316
+"John","Williams","Junior At George Washington University","Bowling Green, Ohio",318
+"Pam","Mueller","Junior At Loyola University, Chicago","Wilmette, Illinois",318
+"Jonah","Knobler","Sophomore At Harvard University","Cincinnati, Ohio",318
+"Bruce","Simmons","Graduate Student","Minneapolis, Minnesota",319
+"Steve","Newman","Computer Consultant","Rockville, Maryland",319
+"Jerome","Vered","Writer","Studio City, California",319
+"Paul","Loeffler","Senior","Los Banos, California",320
+"Felicia","Wu","Senior","Warminster, Pennsylvania",320
+"Jesse","Irwin","Senior","Orange, Connecticut",320
+"Jerome","Vered","Writer","Los Angeles, California",321
+"Pam","Mueller","An Entering Law Student Originally","Chicago, Illinois",321
+"Frank","Spangenberg","Police Lieutenant","Douglaston, New York",321
+"John","Cuthbertson","An Investment Analyst","San Diego, California",323
+"Chris","Miller","Retail Specialist","Louisville, Kentucky",323
+"Brad","Rutter","Tv Quiz Show Host","Lancaster, Pennsylvania",323
+"Rick","Knutsen","Musician","Brooklyn, New York",325
+"Brad","Rutter","Network Administrator","Lancaster, Pennsylvania",325
+"Tad","Carithers","An Attorney","Atlanta, Georgia",325
+"Larry","Cloud","Computer Consultant","Inglewood, California",327
+"Mark","Eckard","Software Designer","Bedford, Massachusetts",327
+"Brad","Rutter","Network Administrator","Lancaster, Pennsylvania",327
+"Ken","Jennings","Software Engineer","Salt Lake City, Utah",328
+"Brad","Rutter","Tv Quiz Show Host","Lancaster, Pennsylvania",328
+"Jerome","Vered","Writer","Los Angeles, California",328
+"Larry","Kole","An Attorney","Hermosa Beach, California",331
+"Mary","Owenby","Word Processor","San Diego, California",331
+"Stacie","Macias","Homemaker","Lake Elsinore, California",331
+"Leonard","Schmidt","An Optometrist And 1992 Seniors Tournament Champion","Pittsburgh, Pennsylvania",332
+"Dave","Willis","Medical Lab Manager","Ventura, California",332
+"India","Cooper","An Actor And Copy Editor Originally","Denver, Colorado",332
+"April","Mcmanus","Bookstore Clerk And 1992 Teen Tournament Champion Originally","Woodbury, Minnesota",333
+"Kirk","Ditzler","Doctoral Student","Houston, Texas",333
+"Phil","Yellman","Word Processor","Albuquerque, New Mexico",333
+"Damon","Poore","Live-In Caregiver","Longview, Washington",334
+"Kate","Sendegeya","Payroll Manager","Antioch, California",334
+"Bob","Shore","An Attorney","Los Angeles, California",334
+"Billy","Baxter","Grad Student And 1992 College Tournament Champion","Richmond, Virginia",335
+"Frank","Epstein","Police Officer","Los Angeles, California",335
+"Leszek","Pawlowicz","Materials Scientist","Phoenix, Arizona",335
+"Renny","Christopher","College Teacher","Santa Cruz, California",336
+"Phil","Klinkner","Political Science Professor Originally","Clinton, Iowa",336
+"Michael","Schill","An Artist","Menlo Park, California",336
+"Tim","Schwab","An Iso Coordinator","Cheektowaga, New York",337
+"Charlie","Kahn","Middle School Math Teacher","Versailles, Kentucky",337
+"Bob","Shore","An Attorney","Los Angeles, California",337
+"Craig","Hendricks","History Teacher","Long Beach, California",338
+"Lynn","Strather","Technical Editor Originally","Hazleton, Pennsylvania",338
+"Richard","Willing","Newspaper Reporter","Detroit, Michigan",338
+"Clare","Delaman","Credit Manager","Huntington Beach, California",339
+"Eric","Grove","An Elementary School Teacher","Los Angeles, California",339
+"Lynn","Strather","Technical Editor Originally","Hazleton, Pennsylvania",339
+"Dan","Fuller","Tennis Coach","New Philadelphia, Ohio",340
+"Mary","Bowers","Public Relations Coordinator","San Jose, California",340
+"Eric","Grove","An Elementary School Teacher","Los Angeles, California",340
+"Ed","Osawa","Student","Torrance, California",341
+"Randy","Haplan","Taxi Driver Originally","New York City",341
+"Mary","Bowers","Public Relations Coordinator","San Jose, California",341
+"Kate","Waits","Law Professor At The University Of Tulsa","Tulsa, Oklahoma",342
+"Brad","Rutter","Network Administrator","Lancaster, Pennsylvania",342
+"Claudia","Perry","Sports Copy Editor","Jersey City, New Jersey",342
+"India","Cooper","An Actor And Copy Editor Originally","Denver, Colorado",343
+"Kirk","Ditzler","Doctoral Student","Houston, Texas",343
+"Bruce","Simmons","Graduate Student","Minneapolis, Minnesota",343
+"Ben","Camack","Film Distribution Consultant Originally","Dallas, Texas",344
+"Deborah","Kelly","College Professor","Chevy Chase, Maryland",344
+"Ed","Osawa","Student","Torrance, California",344
+"Larry","Caplan","An Attorney","Tamarac, Florida",345
+"Karen","Olson","An Energy Conservation Manager","Denver, Colorado",345
+"Ed","Osawa","Student","Torrance, California",345
+"Matt","Whitney","High School English Teacher","Santa Barbara, California",346
+"Lisa","Voss","Library Assistant","Lincoln, Nebraska",346
+"Charlie","Kahn","Middle School Math Teacher","Versailles, Kentucky",346
+"Sara","Maikowski","Grocery Store Cashier Originally","The Bronx",347
+"Leland","Kennedy","An Industrial Sculptor","La Mesa, California",347
+"Richard","Landon","Restaurant Manager","Santa Cruz, California",347
+"Mark","Loundy","Photojournalist","Diamond Bar, California",348
+"Elaine","Baker","An Administrator Originally","Salem, Oregon",348
+"Richard","Landon","Restaurant Manager","Santa Cruz, California",348
+"Alan","Fletcher","Musician","Newton, Massachusetts",349
+"Linnda","Durre","Psychoanalyst","La Jolla, California",349
+"Kevin","Glynn","Writer & Teacher","Glendale, California",349
+"David","Rozenson","Lawyer","Newton, Massachusetts",350
+"Neill","Kovrig","Counseling Support Specialist","San Marcos, California",350
+"Lisa","Voss","Library Assistant","Lincoln, Nebraska",350
+"Nancy","Mcgregor","Homemaker","Akron, Ohio",351
+"John","Wallace","Physician","Fort Bragg, California",351
+"Bob","Blake","An Actuary","Vancouver, British Columbia",351
+"Don","Clark","Spanish Instructor","Ventura, California",352
+"Alice","Strauss","Chemical Engineer","Wilmington, California",352
+"Mark","Loundy","Photojournalist","Diamond Bar, California",352
+"Nancy","Burns","Library Assistant Originally","Chicago, Illinois",353
+"Tom","Mcginn","An Administrative Assistant Originally","Chillicothe, Ohio",353
+"Mark","Loundy","Photojournalist","Diamond Bar, California",353
+"Nicholas","Vallas","Waiter Originally","Cambridge, Massachusetts",354
+"Daniel","Elias","An Advertising Copywriter","New York City",354
+"Leslie","Stucke","Family Counselor","San Diego, California",354
+"Richard","Landon","Restaurant Manager","Santa Cruz, California",355
+"Mary","Mason","Psychology Student Originally","Bakersfield, California",355
+"Daniel","Elias","An Advertising Copywriter","New York City",355
+"Warren","Pistell","Student","Tarzana, California",356
+"Denice","Fractious","Phone Company Line Technician","Los Angeles, California",356
+"Daniel","Elias","An Advertising Copywriter","New York City",356
+"Jaya","Lakshminarayanan","Musician","Somerville, Massachusetts",357
+"Greg","Pokusa","Law Student","Alexandria, Virginia",357
+"David","Rozenson","Lawyer","Newton, Massachusetts",357
+"Arthur","Steiner","Researcher And Writer","Los Angeles, California",358
+"Stephen","Lee","College Instructor","Newbury Park, California",358
+"Larry","Mcknight","Computer Analyst","Ventura, California",358
+"Jay","Mann","An Animal Control Dispatcher","Anaheim, California",359
+"Eva","Rosenberg","Tax And Business Consultant Originally","Budapest, Hungary",359
+"Warren","Pistell","Student","Tarzana, California",359
+"Ric","Moser","Printing Broker","Raymore, Missouri",360
+"Amy","Phillips","Research Student Originally","Clifton, New Jersey",360
+"Jay","Mann","An Animal Control Dispatcher","Anaheim, California",360
+"Linda","Rogers","An Assistant Hospital Administrator Originally","Simsbury, Connecticut",361
+"Brian","Perachet","Boat Captain","Mar Vista, California",361
+"Ric","Moser","Printing Broker","Raymore, Missouri",361
+"Hal","Akerman","Freelance Writer Originally","Brooklyn, New York",362
+"Dale","Barnes","Physician Originally","The Bahamas",362
+"Ric","Moser","Printing Broker","Raymore, Missouri",362
+"Ralph","Moore","An Interior Decorator","Los Angeles, California",363
+"Pat","Hansen","Book Editor","Beverly Hills, California",363
+"Ric","Moser","Printing Broker","Raymore, Missouri",363
+"Marty","Wazowicz","Teacher","Scranton, Pennsylvania",364
+"Larry","Thompson","An Accountant","Breckenridge, Colorado",364
+"Tom","Smolich","Catholic Priest Originally","Sacramento, California",364
+"Myron","Meyer","Scheduling Coordinator","Owatonna, Minnesota",365
+"Mary","Sue Hoban","Marketing And Strategy Consultant","Belmont, Massachusetts",365
+"Alba","Caraceni","Newswriter And Editor","Queens, New York",365
+"Rande","Jandel","School Cafeteria Worker","Omaha, Nebraska",366
+"Julie","Meister","Mom","Old Greenwich, Connecticut",366
+"David","Rozenson","Lawyer","Newton, Massachusetts",366
+"Sherri","Newhouse","Budget Director","Benbrook, Texas",367
+"Jake","Maeroff","Law Student","Plantation, Florida",367
+"Myron","Meyer","Scheduling Coordinator","Owatonna, Minnesota",367
+"Ted","Brown","Teacher Originally","Colorado Springs, Colorado",368
+"Pat","Gaynor","College Professor","Buena Park, California",368
+"Tony","Hess","Data Processor","Cleveland, Ohio",368
+"Linda","Nalitz","Translator And Auditor","Waynesburg, Pennsylvania",369
+"Drew","Blakeman","Freelance Journalist","San Francisco, California",369
+"Norm","Burger","Manufacturing Operations Specialist Originally","Watertown, Massachusetts",369
+"Sara","Mixter","Child Health Advocate Originally","Chevy Chase, Maryland",370
+"Tom","Walker","Lawyer","Boston, Massachusetts",370
+"David","Rozenson","Lawyer","Newton, Massachusetts",370
+"Bob","Scarpone","An Attorney","Flanders, New Jersey",371
+"Barbara","Walker","An Elementary School Principal","Westminster, Maryland",371
+"Michael","Daunt","An Accountant","Waterloo, Ontario, Canada",371
+"Bill","Sloan","Real Estate Broker","Mission Viejo, California",372
+"Michael","Daunt","An Accountant","Waterloo, Ontario, Canada",372
+"Mary","Hirschfeld","An Economics Professor","Los Angeles, California",372
+"Ryan","Holznagel","Software Writer Originally","Forest Grove, Oregon",373
+"Yung-Chang","Chi","An Import-Export Agent","Northridge, California",373
+"Russ","Woodford","Guidance Counselor","Sharpsburg, Maryland",373
+"Steve","Buchthal","Biophysicist Originally","Irvington, New York",374
+"Cherie","Christopher","An Attorney Originally","Glen Ellyn, Illinois",374
+"Ryan","Holznagel","Software Writer Originally","Forest Grove, Oregon",374
+"Martin","Euritt","Teacher","Phoenix, Arizona",375
+"Frank","Stanonik","Locomotive Engineer","Chesterland, Ohio",375
+"Kerry","Tymchuk","An Attorney Originally","Reedsport, Oregon",375
+"Bob","Scarpone","An Attorney","Flanders, New Jersey",376
+"Amanda","Goad","Teen Tournament Winner","Richmond, Virginia",376
+"Bill","Dickenson","College Instructor","Richardson, Texas",376
+"Brice","Sunderland","Teacher And Athletic Director","San Bernardino, California",377
+"Rosemarie","Keenan","Research Administrator","Seattle, Washington",377
+"Tom","Walker","Lawyer","Boston, Massachusetts",377
+"Tricia","Mcrae","Systems Project Manager","Hull, Massachusetts",378
+"Kevin","Blackley","Service Consultant","Los Angeles, California",378
+"Brice","Sunderland","Teacher And Athletic Director","San Bernardino, California",378
+"Daniel","Granof","An Associate Producer Originally","Bethesda, Maryland",379
+"Susie","Sisson","High School English Teacher","Omaha, Nebraska",379
+"Kevin","Blackley","Service Consultant","Los Angeles, California",379
+"Jim","Drake","Student Originally","Niagara Falls, New York",380
+"Ed","Brown","Financial Consultant","Los Angeles, California",380
+"Steve","Berman","Film Executive","Santa Monica, California",380
+"Corinth","Matéra","High School English Teacher","Minneapolis, Minnesota",381
+"Doug","Meyer","An Editor Originally","Cambridge, Massachusetts",381
+"Daniel","Granof","An Associate Producer Originally","Bethesda, Maryland",381
+"Lisa","Osterman","Geologist","Bethesda, Maryland",382
+"Brian","Algra","Doctoral Student","Torrance, California",382
+"Daniel","Granof","An Associate Producer Originally","Bethesda, Maryland",382
+"Shane","Whitlock","College Student","Benton, Arkansas",383
+"Mary","Hirschfeld","An Economics Professor","Los Angeles, California",383
+"Brad","Plovan","An Attorney","Baltimore, Maryland",383
+"Lucien","Schmit","Lawyer","Sherman Oaks, California",384
+"Bill","Dickenson","College Instructor","Richardson, Texas",384
+"David","Sampugnaro","Writer And Consultant","Elmsford, New York",384
+"Alan","Bailey","Playwright And Director","Sherman Oaks, California",385
+"Susan","Insoft","An Attorney And Stay-At-Home Mom","Newton, Massachusetts",385
+"Michael","Hall","Graduate Student Originally","Irwin, Pennsylvania",385
+"David","Cuneo","Seniors Tournament Winner","Reisterstown, Maryland",386
+"Beverly","Spurs","Podiatrist","Concord, California",386
+"Bernie","Cullen","Graduate Student","Chicago, Illinois",386
+"Omar","Shokeir","Pathologist","Bellingham, Washington",387
+"Willie","Costley","An Administrative Assistant","Lexington, Kentucky",387
+"Lisa","Osterman","Geologist","Bethesda, Maryland",387
+"Ben","Nuckols","Journalist","Baltimore, Maryland",388
+"Patrice","Escalle","Student","Mill Valley, California",388
+"Lisa","Osterman","Geologist","Bethesda, Maryland",388
+"Amanda","Goad","Teen Tournament Winner","Richmond, Virginia",389
+"Bill","Sloan","Real Estate Broker","Mission Viejo, California",389
+"Mike","Dupée","An Attorney","Gainesville, Florida",389
+"John","Smith","Freelance Writer","Los Angeles, California",390
+"Missy","Carlson","Teacher And A Speech Coach","Naperville, Illinois",390
+"Ben","Nuckols","Journalist","Baltimore, Maryland",390
+"Fran","Pipp","Psychologist","Dexter, Michigan",391
+"Bill","Nyden","Computer Programmer And Analyst","Mountain View, California",391
+"Joe","Roberts","Director Of Planning & Building","Perth Amboy, New Jersey",391
+"Peggi","Malys","Medical Student Originally","Orlando, Florida",392
+"Jim","Tompkins-Maclaine","Musician Originally","Tiffin, Ohio",392
+"Mark","Mcdermott","Freelance Writer Originally","Schaller, Iowa",392
+"Christen","O'connor","Mother Of Three","Acton, Massachusetts",393
+"Joe","Zito","Medical Student","New Orleans, Louisiana",393
+"Ramsey","Campbell","Writer","Newport Beach, California",393
+"Yeechang","Lee","An Equity Analyst Originally","The Bronx, New York",394
+"Kammy","Mccleery","Coordinator Of Experiential Education And Student Employment","Lexington, Kentucky",394
+"Missy","Carlson","Teacher And A Speech Coach","Naperville, Illinois",394
+"Ouida","Rellstab","Teacher And Seniors Tournament Winner","Metairie, Louisiana",395
+"Bruce","Cox","Computer Operations Analyst","Lakeside, California",395
+"Cigus","Vanni","Psychologist Originally","South Amboy, New Jersey",395
+"Marion","Arkin","Former Editor Originally","New York City, New York",396
+"Robert","Levy","An Optometrist","Alexandria, Virginia",396
+"Steve","Sosnick","An Options Trader","New York City, New York",396
+"Jeff","Magee","Registered Nurse","Ridgefield Park, New Jersey",397
+"Donna","Brutkoski","Newspaper Copy Editor Originally","Brandon, Vermont",397
+"Kammy","Mccleery","Coordinator Of Experiential Education And Student Employment","Lexington, Kentucky",397
+"Jan","Mertens","Computer Programmer","Antwerp, Belgium",398
+"Steinar","Madsen","Senior Medical Officer","Valstad, Norway",398
+"Elena","Kislenkova","An Assistant Lecturer","ST. Petersburg, Russia",398
+"Soren","Wedderkopp","Creative Director","Copenhagen, Denmark",399
+"Tom","Kinne","Translator","Frankfurt, Germany",399
+"Mandi","Hale","Pharmaceutical Dispenser","Ruddingham, Nottingham England",399
+"Hasib","Yildirim","Banker","Istanbul, Turkey",400
+"Ulf","Jensen","University Teacher","Uppsala, Sweden",400
+"Ryan","Holznagel","Writer","Portland, Oregon",400
+"Stephanie","Monaghan","High School Humanities Teacher","Seattle, Washington",401
+"Andrew","Gonzalez","Student Originally","Houston, Texas",401
+"Donna","Brutkoski","Newspaper Copy Editor Originally","Brandon, Vermont",401
+"Evelyn","Pan Bavier","Museum Administrator","Arlington, Massachusetts",402
+"Derek","Ziegler","Transportation Analyst","Philadelphia, Pennsylvania",402
+"Ramsey","Campbell","Writer","Newport Beach, California",402
+"Kevin","Laude","Telecommunications Consultant","Mission Viejo, California",403
+"Nancy","Casbeer","Law Student Originally","Forest City, Arkansas",403
+"Ramsey","Campbell","Writer","Newport Beach, California",403
+"Brian","O'rourke","Director Of Development","Marblehead, Massachusetts",404
+"Tony","Morgan","Financial Analyst Originally","Jefferson City, Tennessee",404
+"Ramsey","Campbell","Writer","Newport Beach, California",404
+"Mike","Bober","Political Fundraiser","Arlington, Virginia",405
+"Elaine","Thacker","Writer And Consultant","Pittsburgh, Pennsylvania",405
+"Donna","Brutkoski","Newspaper Copy Editor Originally","Brandon, Vermont",405
+"Jan","Mertens","Computer Programmer","Antwerp, Belgium",406
+"Mandi","Hale","Pharmaceutical Dispenser","Ruddingham, Nottingham England",406
+"Ulf","Jensen","University Teacher","Uppsala, Sweden",406
+"Bethany","Paye","Graduate Student","Scarborough, Maine",407
+"Jeff","Combe","High School Teacher","Temple City, California",407
+"Kevin","Laude","Telecommunications Consultant","Mission Viejo, California",407
+"Marlene","Lein","An Attorney","Hooksett, New Hampshire",408
+"Eric","Margelefsky","Graduate Student Originally","Toledo, Ohio",408
+"Mike","Bober","Political Fundraiser","Arlington, Virginia",408
+"Ramsey","Campbell","Writer","Newport Beach, California",409
+"Kim","Taylor","Consulting Attorney","Brooklyn, New York",409
+"Bernard","Pena","Towboat Captain","Marrero, Louisiana",409
+"Brandy","Shattuck","Medical Student Originally","Newaygo, Michigan",410
+"David","Tambling","Strategic Planning Manager","Menlo Park, California",410
+"Mike","Bober","Political Fundraiser","Arlington, Virginia",410
+"Morgan","Chase","Mathematics Educator Originally","Antrim, New Hampshire",411
+"Steve","Clark","Training Manager","Rochester Hills, Michigan",411
+"Brandy","Shattuck","Medical Student Originally","Newaygo, Michigan",411
+"Tom","Cubbage","Law Student And Winner Of Last Year's College Tournament","Bartlesville, Oklahoma",412
+"Yael","Sofaer","Programmer And Analyst Originally","Israel",412
+"Brian","Wangsgard","Senior Marketing Representative Originally","Ogden, Utah",412
+"Chris","Shea","Radio Operator","Los Angeles, California",413
+"Rich","Lerner","Lawyer","Pago Pago, American Samoa",413
+"Cathy","Boggs","Freelance Writer Originally","Appleton, Wisconsin",413
+"Andy","Sanderson","High School English Teacher","Mount Morris, New York",414
+"Sarah","Johnson","Law Clerk Originally","Newport News, Virginia",414
+"Morgan","Chase","Mathematics Educator Originally","Antrim, New Hampshire",414
+"Peggi","Malys","Medical Student Originally","Orlando, Florida",415
+"Cigus","Vanni","Psychologist Originally","South Amboy, New Jersey",415
+"Tom","Cubbage","Law Student And Winner Of Last Year's College Tournament","Bartlesville, Oklahoma",415
+"Ben","Kesling","Student","Lexington, Kentucky",416
+"Pam","Maine","Mutual Fund Accountant","Boston, Massachusetts",416
+"Sarah","Johnson","Law Clerk Originally","Newport News, Virginia",416
+"Ouida","Rellstab","Teacher And Seniors Tournament Winner","Metairie, Louisiana",417
+"Mark","Mcdermott","Freelance Writer Originally","Schaller, Iowa",417
+"Brian","Wangsgard","Senior Marketing Representative Originally","Ogden, Utah",417
+"Deanna","Easter","Culinary Student","Morehead City, North Carolina",418
+"Tony","Jonick","Publisher And House Dad","Oakland, California",418
+"Ben","Kesling","Student","Lexington, Kentucky",418
+"Rich","Lerner","Lawyer","Pago Pago, American Samoa",419
+"Brian","Wangsgard","Senior Marketing Representative Originally","Ogden, Utah",419
+"Tom","Cubbage","Law Student And Winner Of Last Year's College Tournament","Bartlesville, Oklahoma",419
+"Amy","Oberst","Contract Attorney","Arlington, Virginia",421
+"Chad","Morgan","An Engineer","Edwards, California",421
+"Ben","Kesling","Student","Lexington, Kentucky",421
+"Mark","Eckenwiler","An Attorney Originally","Tulsa, Oklahoma",422
+"Julie","Baker","An Attorney","Crestwood, Kentucky",422
+"Chad","Morgan","An Engineer","Edwards, California",422
+"Bruce","Clark","An Attorney","Albuquerque, New Mexico",423
+"Joe","Mcnamara","Naval Flight Officer Originally","Philadelphia, Pennsylvania",423
+"Michael","Dupee","An Attorney","Cleveland, Ohio",423
+"Jennifer","Weiner","An Underwriting Manager","Chanhassen, Minnesota",424
+"Teresa","Grasso","Customer Relations Specialist","Cardiff-By-The-Sea, California",424
+"Mark","Eckenwiler","An Attorney Originally","Tulsa, Oklahoma",424
+"Jeff","Corrigan","Medical Secretary","Atlanta, Georgia",425
+"Bea","Kosla","Secondary School Teacher","Townsville, Maryland",425
+"Michael","Dupee","An Attorney","Cleveland, Ohio",425
+"David","Madden","Student Originally","Ridgewood, New Jersey",426
+"John","Colterman","High School Physics Teacher","Burlington, Ontario, Canada",426
+"Teresa","Grasso","Customer Relations Specialist","Cardiff-By-The-Sea, California",426
+"Lorna","Valentine","Teacher","Concord, California",427
+"Doug","Carter","Schoolteacher","Albuquerque, New Mexico",427
+"Marty","Sade","Math Teacher","Tucson, Arizona",427
+"Cheryl","Bush","An Accountant","Selah, Washington",428
+"Michael","Segal","An Aspiring Teacher","Carlsbad, California",428
+"David","Madden","Student Originally","Ridgewood, New Jersey",428
+"Jennifer","Hartford","An Insurance Adjuster","West Covina, California",429
+"Francis","Grant JR.","An Earth Science Teacher","New York, New York",429
+"Bethany","Paye","Graduate Student","Scarborough, Maine",429
+"Mark","Dawson","Business Manager","Chamblee, Georgia",430
+"Marielsa","Ruiz","Flight Attendant","New York, New York",430
+"Jennifer","Hartford","An Insurance Adjuster","West Covina, California",430
+"Jamie","Ball","An Attorney","North Hills, California",431
+"Jim","O'malley","Retired Police Sergeant","The Bronx, New York",431
+"David","Madden","Student Originally","Ridgewood, New Jersey",431
+"Judy","Zellers","Homemaker","Mountain View, California",432
+"Jim","Henderson","An Attorney","Sacramento, California",432
+"Marty","Sade","Math Teacher","Tucson, Arizona",432
+"Matt","Barakat","Reporter","Falls Church, Virginia",433
+"Kate","Morrical","Structural Engineer","Silver Spring, Maryland",433
+"David","Madden","Student Originally","Ridgewood, New Jersey",433
+"Brendie","Vance","Law Student","Chicago, Illinois",434
+"Steve","Kohl","An International Program Administrator","Washington, D.C.",434
+"Ryan","Holznagel","Software Writer Originally","Forest Grove, Oregon",434
+"Leigh","Cordner","Performer","Toronto, Ontario",435
+"Juliet","Chase","High School English Teacher","Somerville, Massachusetts",435
+"Mark","Dawson","Business Manager","Chamblee, Georgia",435
+"Suzanne","Fatta","Graduate Student","Somerville, Massachusetts",436
+"Sam","Keen","College Student","College Station, Texas",436
+"Mark","Dawson","Business Manager","Chamblee, Georgia",436
+"Becky","Molina","An Educator And Mother","Fort Pierce, Florida",437
+"Todd","Tarantino","Composer","New York, New York",437
+"Mark","Dawson","Business Manager","Chamblee, Georgia",437
+"Jim","Mehl","Geologist","Alexandria, Virginia",438
+"Ellen","Mandell","An Attorney","Beechwood, Ohio",438
+"Bill","Sloan","Real Estate Broker","Mission Viejo, California",438
+"Jessica","Schreader","An Office Manager","Delran, New Jersey",439
+"Annemarie","Gallagher","Customer Service Representative","Fremont, California",439
+"David","Madden","Student Originally","Ridgewood, New Jersey",439
+"David","Lindauer","An Army Officer","Heidelberg, Germany",440
+"Kevin","Mulhern","Computer Programming Consultant","Stanhope, New Jersey",440
+"Ryan","Holznagel","Software Writer Originally","Forest Grove, Oregon",440
+"Eugene","Gamblin","Nightclub And Restaurant Owner","Ronkonkoma, New York",441
+"Marisa","Prasifka","Stay-At-Home Mom","Austin, Texas",441
+"Mark","Dawson","Business Manager","Chamblee, Georgia",441
+"Charles","Martin","Lawyer","Washington, D.C.",442
+"Kem","Herding","Homemaker And Freelance Editor","Highlands, North Carolina",442
+"David","Madden","Student Originally","Ridgewood, New Jersey",442
+"Michelle","Roberts","Lab Technician","Seattle, Washington",443
+"Mike","Mccarthy","An Air Force Officer","Annandale, Virginia",443
+"Bill","Sloan","Real Estate Broker","Mission Viejo, California",443
+"Evan","Kleber","Stay-At-Home Dad And Mortgage Broker","Del Mar, California",444
+"Audrey","Golub","An Educator","Philadelphia, Pennsylvania",444
+"David","Madden","Student Originally","Ridgewood, New Jersey",444
+"Kerry","Towle","Retiree","Ellicott City, Maryland",445
+"Gordon","Frankel Light","An Attorney Originally","Miami, Florida",445
+"Bill","Sloan","Real Estate Broker","Mission Viejo, California",445
+"Iris","Woon","An Attorney","Montebello, California",446
+"Rohan","Virginkar","Recent College Graduate","Diamond Bar, California",446
+"Jeremy","Davis","Laboratory Supervisor","Costa Mesa, California",446
+"Jennifer","Burrus","Homemaker And Substitute Teacher","Leawood, Kansas",447
+"Kate","Brogan","An Attorney","North Hampton, New Hampshire",447
+"David","Madden","Student Originally","Ridgewood, New Jersey",447
+"Karen","Arciero","Sales Manager","Mounds View, Minnesota",448
+"Mark","Murray","Screenwriter","Studio City, California",448
+"David","Madden","Student Originally","Ridgewood, New Jersey",448
+"Nicole","Tantoco","12-Year-Old","San Ramon, California",449
+"William","Marengo","An 11-Year-Old","The Bronx, New York",449
+"Katie","Baxter","10-Year-Old","Glenside, Pennsylvania",449
+"Eric","Webb","12-Year-Old","Austin, Texas",450
+"Aki","Terasaki","An 11-Year-Old","Newark, Delaware",450
+"Whitney","Dearden","An 11-Year-Old","Washington Crossing, Pennsylvania",450
+"Sam","Longoria","An Engineer And Consultant Originally","Enumclaw, Washington",451
+"Candy","Martinez","Systems Consultant","Fremont, California",451
+"Jeff","Slike","An Atm Repairman Originally","Harrisburg, Pennsylvania",451
+"Laurie","Parker","Writer And Editor","Franklin, Tennessee",452
+"Brian","Pearson","Naval Officer","Virginia Beach, Virginia",452
+"David","Madden","Student Originally","Ridgewood, New Jersey",452
+"Margaret","Rhodes","Horseback Riding Instructor","Marietta, Georgia",453
+"Richard","Bernstein","An Advertising Copywriter","Washington, D.C.",453
+"David","Madden","Student Originally","Ridgewood, New Jersey",453
+"Mark","Stacy","Newspaper Copy Editor","Morgantown, West Virginia",454
+"Rob","Vernon","Health Care Systems Specialist","New Milford, New Jersey",454
+"Cara","Colbert","Billing Analyst","Austin, Texas",454
+"Ellyn","Ritterskamp","Prepress Technician And Ethics Instructor","Charlotte, North Carolina",455
+"Oscar","Avila","Writer","Chicago, Illinois",455
+"David","Madden","Student Originally","Ridgewood, New Jersey",455
+"Jenny","Scharf","An Author And Physics Teacher","Virginia Beach, Virginia",456
+"Andrew","Greenbaum","Stay-At-Home Dad","Coppell, Texas",456
+"Mark","Stacy","Newspaper Copy Editor","Morgantown, West Virginia",456
+"Britney","Harris","Dance/Movement Therapist Originally","West Union, West Virginia",457
+"Aaron","Schnier","Restaurant Manager","Lincoln, Nebraska",457
+"David","Madden","Student Originally","Ridgewood, New Jersey",457
+"Paul","Barry","Financial Consultant","Hampton Falls, New Hampshire",458
+"Kim","Marshall","Defense Analyst","Washington, D.C.",458
+"Mark","Stacy","Newspaper Copy Editor","Morgantown, West Virginia",458
+"Maya","Kobersy","An Attorney Originally","Sterling Heights, Michigan",459
+"Dan","Tick","Technical Support Manager","Escondido, California",459
+"David","Madden","Student Originally","Ridgewood, New Jersey",459
+"Ivan","Kleinfeld","An 11-Year-Old","Arlington, Virginia",460
+"Sara","Jansson","10-Year-Old","Monmouth Junction, New Jersey",460
+"Brian","Cunningham","12-Year-Old","Los Angeles, California",460
+"Alex","Stambaugh","12-Year-Old","Paris, Kentucky",461
+"Neha","Gokhale","10-Year-Old","Houston, Texas",461
+"Michael","Blake","12-Year-Old","Hamburg, New York",461
+"Kristin","Frankhouser","12-Year-Old","Baton Rouge, Louisiana",462
+"Kate","Dzurilla","12-Year-Old","Syosset, New York",462
+"Dan","Amboy","12-Year-Old","Lapeer, Michigan",462
+"Pam","Richardson","An Assistant Professor","Roanoke, Virginia",463
+"Richard","Sowalsky","Medical Student","Baltimore, Maryland",463
+"Bill","Warren","Restaurant Owner Originally","Rockville, Indiana",463
+"Lea","Hall","Real Estate Agent","Los Angeles, California",464
+"Harris","Peet","Writer","Los Angeles, California",464
+"Avrom","Simon","Physician","Chicago, Illinois",464
+"Richard","Boyce","Writer Originally","Plattsburgh, New York",465
+"Mary","Barry","Telemarketing Manager Originally","Kankakee, Illinois",465
+"Jeff","Bandman","Lawyer","La Jolla, California",465
+"Hardy","Watts","An Elementary School Teacher","Boston, Massachusetts",466
+"Anne","Reynolds","Lawyer","Toronto, Ontario",466
+"Roland","Lange","Sales Director","Brooklyn, New York",466
+"Bernard","Pena","Towboat Captain","Marrero, Louisiana",467
+"Carrie","Pfeiffer","High School History And Government Teacher","Columbia, Tennessee",467
+"Anne","Reynolds","Lawyer","Toronto, Ontario",467
+"Barry","Molitch","Retired Stagehand","Incline Village, Nevada",468
+"Donna","Grant","Model","Brooklyn, New York",468
+"Barbara","Skolaut","Maintenance Planner","Richmond, Virginia",468
+"Andy","Gould","Stockbroker","Greensboro, North Carolina",469
+"Holly","Tooker","Dog Walker","New York City, New York",469
+"Mike","Carter","An Attorney","Norman, Oklahoma",469
+"Wayne","Perra","An Advertising Manager","Tenafly, New Jersey",470
+"Florence","Livingston","Homemaker","Ellicott City, Maryland",470
+"Joe","Haggerty","Distributor Originally","Woonsocket, Rhode Island",470
+"John","Mackall","An Attorney","Santa Barbara, California",471
+"Florence","Shimano","Hospitality Specialist","San Mateo, California",471
+"Steven","Kurtz","Columnist Originally","Michigan",471
+"Andrew","Connally","Private School Teacher","Ardmore, Pennsylvania",472
+"Adam","Green","Financial Analyst","New York City",472
+"Bev","Schwartzberg","History Teacher Originally","Amherst, Massachusetts",472
+"Ira","Schwartz","Physician","Decatur, Georgia",473
+"Bronwyn","Noble","Technical Specialist","Madison, Wisconsin",473
+"Sue","Agos","Senior Personnel Specialist","Angola, New York",473
+"Dan","Bowman","Letter Carrier","Dixon, Illinois",474
+"Mike","Yanochik","Law Student","Austin, Texas",474
+"Steven","Kurtz","Columnist Originally","Michigan",474
+"Kim","Wells","Customer Service Representative","Aloha, Oregon",475
+"Jonathan","Lowenberg","Certified Public Accountant","Baltimore, Maryland",475
+"Dan","Bowman","Letter Carrier","Dixon, Illinois",475
+"Debbie","Howe","An Education Administrator","Rochester, New York",476
+"Rob","Lasker","Humanities Student","Detroit, Michigan",476
+"Ray","Baxter","Lawyer","Boston, Massachusetts",476
+"Terry","Ragazzini","Homemaker","Wilton, Connecticut",477
+"David","Harris","Librarian","Austin, Texas",477
+"Rob","Lasker","Humanities Student","Detroit, Michigan",477
+"Keith","Harrett","Musician","San Pablo, California",478
+"Mark","Shrager","Budget Analyst","Granada Hills, California",478
+"Phil","Leib","Typographer","Westfield, New Jersey",478
+"Nancy","Austin","Teacher","Ellicott City, Maryland",479
+"Bill","Forman","Law Student Originally","Philadelphia, Pennsylvania",479
+"Terry","Ragazzini","Homemaker","Wilton, Connecticut",479
+"Terry","Swart","Medical Research Technician","Norwalk, California",480
+"Chris","Mullins","An English Teacher","Manhattan Beach, California",480
+"Gretchen","Radtke","Law School Graduate","Redwood City, California",480
+"Wen","Shen","Senior","Hillsborough, California",481
+"Beth","Mullins","Senior","Mendenhall, Mississippi",481
+"Mike","Grant","Senior","Kansas City, Missouri",481
+"Avi","Stadler","Senior","Atlanta, Georgia",482
+"Richard","Morris","Senior","Auburn, Alabama",482
+"Sharon","Kristal","Senior","Rockville, Maryland",482
+"Wen","Shen","Senior","Hillsborough, California",483
+"Avi","Stadler","Senior","Atlanta, Georgia",483
+"Jamie","Weiss","Junior","Fairfax, Virginia",483
+"Beth","Mullins","Senior","Mendenhall, Mississippi",484
+"Peji","Ghanouni","Senior","Marietta, Georgia",484
+"Andrew","Mcgeorge","Senior","Topeka, Kansas",484
+"Susan","Davis","Teacher","Warrior Run, Pennsylvania",486
+"Dennis","Shirilla","Shopping Mall Manager","San Antonio, Texas",486
+"Terry","Swart","Medical Research Technician","Norwalk, California",486
+"Willy","Jay","An Attorney Originally","Churchville, Maryland",487
+"Catie","Camille","Student","Rochester, New York",487
+"David","Madden","Student Originally","Ridgewood, New Jersey",487
+"Larry","Minton","Lumber Salesman","Fullerton, California",488
+"Freddye","Silverman","Systems Analyst","Baltimore, Maryland",488
+"Terry","Swart","Medical Research Technician","Norwalk, California",488
+"David","Marcus","An Attorney","Hollywood, California",489
+"Isabel","Leininger","Housewife Originally","Maryland",489
+"Erik","Larsen","Temporary Secretary Originally","Chicago, Illinois",489
+"Kevin","Gillogly","An Advertising Copywriter","Los Angeles, California",490
+"Mac","Jones","Human Resources Management Consultant","Pittsburgh, Pennsylvania",490
+"Erik","Larsen","Temporary Secretary Originally","Chicago, Illinois",490
+"Barbara","Lieberman","Librarian","Pinebrook, New Jersey",491
+"Jim","Hennessy","Writer And Consultant","San Clemente, California",491
+"Deborah","Hummel","Proofreader","York, Pennsylvania",491
+"Kathy","Rice","Computer Specialist","Antioch, California",492
+"Jerry","Fried","An Artist Originally","Lakewood, New Jersey",492
+"Deborah","Hummel","Proofreader","York, Pennsylvania",492
+"Gunther","Freehill","An Information Officer Originally","Melvin, Illinois",493
+"Keith","Pickering","Programmer And Analyst","Watertown, Minnesota",493
+"Elaine","Zollner","Physician","Los Angeles, California",493
+"Gretchen","Pruett","Housewife & Student","Saugerties, New York",494
+"Martin","Gostanian","An Advertising Copywriter","Medford, Massachusetts",494
+"Elaine","Zollner","Physician","Los Angeles, California",494
+"Kathy","Donegan","Systems Analyst","Gaithersburg, Maryland",495
+"Brannon","Denning","Graduate Student","New Haven, Connecticut",495
+"David","Bagley","An Attorney","San Diego, California",495
+"Sarah","Stegall","Writer","Austin, Texas",496
+"Ken","Mitchell","Naval Officer","The Philippines",496
+"Jamie","Orenstein","An Attorney","Brooklyn, New York",496
+"Sharon","Schwartz","Teacher","Brooklyn, New York",497
+"Michael","Abracham","An Accountant","Boston, Massachusetts",497
+"Phil","Leib","Typographer","Westfield, New Jersey",497
+"Ken","Sarajian","Color Separator","Mahwah, New Jersey",498
+"Mary","Beth Smalley","Curatorial Assistant","Brooklyn, New York",498
+"Mark","Shrager","Budget Analyst","Granada Hills, California",498
+"Kim","Worth","Freelance Writer And Stand-Up Comedian","Venice, California",499
+"Dan","Melia","Professor","San Francisco, California",499
+"Bob","Harris","Political Humorist Originally","Cleveland, Ohio",499
