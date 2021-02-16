@@ -14,6 +14,6 @@ get_game_details <- function(id) {
   )
 }
 
-df <- map(6001:6010, get_game_details)
+df <- map(6001:6002, get_game_details)
 
 

@@ -247,13 +247,15 @@ game_data_megan <- map(1:2000, get_game_data)
 game_details_megan <- as_tibble(do.call(rbind, game_data_megan)) 
 write_csv(game_details_megan, here::here("data - output", "game_details_1_2000.csv"))
 
+# Jake's Games
 game_data_jake <- map(2001:4000, get_game_data)
 game_details_jake <- as_tibble(do.call(rbind, game_data_jake)) 
 write_csv(game_details_jake, here::here("data - output", "game_details_20001_4000.csv"))
 
-game_data_matt <- map(4001:6932, get_game_data)
+# Matt's Games
+game_data_matt <- map(6001:6932, get_game_data)
 game_details_matt <- as_tibble(do.call(rbind, game_data_matt)) 
-write_csv(game_details_matt, here::here("data - output", "game_details_4001_6932.csv"))
+# write_csv(game_details_matt, here::here("data - output", "game_details_4001_6932.csv"))
 
 # Split into data sets ----------------------------------------------------
 
