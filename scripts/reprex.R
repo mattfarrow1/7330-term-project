@@ -27,3 +27,10 @@ c <- tibble(id = c(rep(a$id[1], 3),
 
 
 
+# Try reshaping data in tidyr and then dplyr::bind_rows?  So like, lapply(df,
+# function(x) tidyr::reshape…)?  Or if I don’t understand lapply(df, function(x)
+# tibble(rep(x$a$id, nrow(x$b)) and so on
+
+lapply(df, function(x) {
+  tibble(rep(x$a$id, nrow(x$b)))
+})
