@@ -4,6 +4,7 @@ library(data.table)
 
 
 get_game_details <- function(id) { 
+  tryCatch({
   game_details <- lst(
     airdate = whatr::whatr_airdate(game = id),
     board = whatr::whatr_board(game = id),
@@ -11,10 +12,10 @@ get_game_details <- function(id) {
     players = whatr::whatr_players(game = id),
     synopsis = whatr::whatr_synopsis(game = id),
     doubles = whatr_doubles(game = id)
-  )
+  )}, error=function(e){})
 }
 
-df <- map(1:1000, get_game_details)
+df <- map(1:500, get_game_details)
 
 stupid_function <- function(game_list) {
   airdate_df <- NULL
