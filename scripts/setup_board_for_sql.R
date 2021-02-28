@@ -15,11 +15,11 @@ board_clean <- left_join(board, clue_values, by = c("round" = "round", "row" = "
 # Find games and clues that are daily doubles
 doubles <- doubles %>% 
   select(uid, i) %>% 
-  mutate(double = TRUE)
+  mutate(double = 1)
 
-# Merge into board & replace blanks with FALSE
+# Merge into board & replace blanks with 0
 board_clean <- left_join(board_clean, doubles, by = c("uid", "i"))
-board_clean$double[is.na(board_clean$double)] <- FALSE
+board_clean$double[is.na(board_clean$double)] <- 0
 
 # Rename columns
 board_clean <- board_clean %>% 
