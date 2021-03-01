@@ -38,5 +38,24 @@ location <- tibble(row = c(rep(1, 6),
 # Merge into board
 board_clean <- left_join(board_clean, location, by = c("row" = "row", "col" = "col"))
 
+# Create clueid
+board_clean <- board_clean %>% 
+  mutate(clueid = row_number())
+
+# Organize columns
+board_clean <- board_clean %>%
+  select(clueid,
+         round,
+         chosen,
+         category,
+         clue,
+         answer,
+         value,
+         double,
+         gameid,
+         row,
+         col,
+         location)
+
 # Save file
 write_csv(board_clean, here::here("data - output", "board_for_sql.csv"))
