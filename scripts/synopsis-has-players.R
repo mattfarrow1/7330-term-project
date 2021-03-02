@@ -27,7 +27,7 @@ synopsis_has_players <-
   left_join(X4g,
             players_has_episodes,
             by = c("episode_gameid" = "gameid", "name" = "first")) %>% 
-  select(1, 8)
+  select(2, 8)
 glimpse(synopsis_has_players)
 
 # Save to disk
