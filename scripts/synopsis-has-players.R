@@ -1,3 +1,9 @@
+# Load library
+library(tidyverse)
+
+# Load data
+load(here::here("data - output", "jeopardy.RData"))
+
 # Start with players_has_episodes
 players_has_episodes <- game_contestants %>% 
   pivot_longer(cols = starts_with("player_"), values_to = "playerid") %>% 
@@ -12,15 +18,16 @@ x <- player_ids %>%
 # Join together
 players_has_episodes <- left_join(players_has_episodes, x, by = c("playerid" = "contestant_id"))
 
-# Look at the data
-glimpse(players_has_episodes)
-glimpse(synopsis)
+# Load the synopsis table data from mysql
+# X4g <- read_csv("~/Desktop/4g.csv")
+glimpse(X4g)
 
 # Create synopsis_has_players
 synopsis_has_players <-
-  left_join(synopsis,
+  left_join(X4g,
             players_has_episodes,
-            by = c("uid" = "gameid", "name" = "first"))
+            by = c("episode_gameid" = "gameid", "name" = "first")) %>% 
+  select(1, 8)
 glimpse(synopsis_has_players)
 
 # Save to disk
