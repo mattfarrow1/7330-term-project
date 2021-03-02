@@ -1,5 +1,7 @@
 # Load library
 library(tidyverse)
+library(stringi)
+library(data.table)
 
 # Load data
 load(here::here("data - output", "jeopardy.RData"))
@@ -56,6 +58,16 @@ board_clean <- board_clean %>%
          row,
          col,
          location)
+
+#update to ASCII (remove accents)
+board_clean <- as.data.table(board_clean)
+board_clean[, answer := iconv(answer,to = 'ASCII//TRANSLIT')]
+
+#check that it worked
+board_clean[54]
+
+board_clean[, category := iconv(category,to = 'ASCII//TRANSLIT')]
+board_clean[, clue := iconv(clue,to = 'ASCII//TRANSLIT')]
 
 # Save file
 write_csv(board_clean, here::here("data - output", "board_for_sql.csv"))
