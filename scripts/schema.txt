@@ -38,8 +38,8 @@ CREATE TABLE IF NOT EXISTS `jeopardy`.`board` (
   `roundnum` INT NOT NULL,
   `chosen` INT NULL DEFAULT NULL,
   `category` VARCHAR(30) NULL DEFAULT NULL,
-  `clue` VARCHAR(75) NULL DEFAULT NULL,
-  `answer` VARCHAR(30) NULL DEFAULT NULL,
+  `clue` VARCHAR(500) NULL DEFAULT NULL,
+  `answer` VARCHAR(250) NULL DEFAULT NULL,
   `score` INT NOT NULL,
   `doublejeop` TINYINT(1) NULL DEFAULT NULL,
   `episode_gameid` INT NOT NULL,
@@ -75,7 +75,7 @@ COLLATE = utf8mb4_0900_ai_ci;
 -- Table `jeopardy`.`players`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `jeopardy`.`players` (
-  `playerid` INT NOT NULL,
+  `playerid` INT NOT NULL AUTO_INCREMENT,
   `firstname` VARCHAR(20) NULL DEFAULT NULL,
   `lastname` VARCHAR(25) NULL DEFAULT NULL,
   `occupation` VARCHAR(250) NULL DEFAULT NULL,

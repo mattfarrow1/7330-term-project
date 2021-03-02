@@ -71,3 +71,9 @@ board_clean[, clue := iconv(clue,to = 'ASCII//TRANSLIT')]
 
 # Save file
 write_csv(board_clean, here::here("data - output", "board_for_sql.csv"))
+
+#save file without location
+board_sql2 <- board_clean[,0:9]
+
+# Save file
+write_csv(board_sql2, here::here("data - output", "board_for_sql2.csv"))
