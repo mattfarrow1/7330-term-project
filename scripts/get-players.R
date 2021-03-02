@@ -30,6 +30,9 @@ players <- map(1:6948, get_players)
 # Save the data as a backup
 save(players, file = here::here("data - raw", "raw_player_data.RData"))
 
+#open data
+#load(here::here("data - raw", "raw_player_data.RData"))
+
 # Unlist to a tibble
 players_df <- map_dfr(players, `[`, c("contestant_id", "first", "last", "occupation", "from", "uid"))
 
@@ -54,3 +57,13 @@ save(player_ids, file = here::here("data - output", "player_ids.RData"))
 
 write_csv(game_contestants, here::here("data - output", "game_contestants.csv"))
 save(game_contestants, file = here::here("data - output", "game_contestants.RData"))
+
+#clean up to remove accents
+players_ids <- read_csv(here::here("data - output", "player_ids.csv"))
+
+#change to data table
+players_clean <- as.data.table(players_ids)
+players_clean[, first := stri_trans_general(str = first,id = "Latin-ASCII")]
+players_clean[, last := stri_trans_general(str = last,id = "Latin-ASCII")]
+#check for errors
+players_clean[9]
