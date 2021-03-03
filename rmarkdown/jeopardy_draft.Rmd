@@ -1,0 +1,91 @@
+---
+title: "J! Archive (draft)"
+author: "Megan Ball, Matt Farrow, Jake Harrison"
+date: "3/3/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(kableExtra)
+library(knitr)
+options(scipen = 50)
+load(here::here("data - output", "jeopardy.RData"))
+```
+
+## Abstract
+
+Use the data found on the J!-Archive [@j-archive] website to create the term project for DS 7330: File Organization and Database Management.
+
+## Data Collection
+
+The `whatr` package was used for the majority of the data collection for this project. Using the package's included functions, we were able to crawl the J! Archive and extract the air date, board details, daily double information, final scores, player information, and game synopsis for 6,948 games spanning from 1983 until 2021. Once the data had been crawled, a function with a `for` loop was used to iterate over each game and bind the rows of each piece of information into a single data set. 
+
+### Data Details
+
+```{r echo=FALSE}
+data_description <- tibble::tibble(
+  Table = c("airdate", "board", "doubles", "game_contestants", "player_ids", "scores", "synopsis"),
+  Rows = c(6775, 402160, 199994, 6984, 13829, 409020, 20333),
+  Columns = c(3, 8, 7, 10, 5, 6, 6)
+)
+
+data_description %>%
+  mutate_if(is.numeric, format, digits = 0, nsmall = 0, big.mark = ",") %>% 
+  kbl(caption = "Table Stats", align = "lrr", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+```{r echo=FALSE}
+airdate %>% 
+  slice_head(n = 5) %>% 
+    kbl(caption = "Airdate (first 5 rows)", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+board %>% 
+  slice_head(n = 5) %>% 
+    kbl(caption = "Board (first 5 rows)", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+doubles %>% 
+  slice_head(n = 5) %>% 
+    kbl(caption = "Doubles (first 5 rows)", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+game_contestants %>% 
+  slice_head(n = 5) %>% 
+    kbl(caption = "Game Contestants (first 5 rows)", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+player_ids %>% 
+  slice_head(n = 5) %>% 
+    kbl(caption = "Player IDs (first 5 rows)", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+scores %>% 
+  slice_head(n = 5) %>% 
+    kbl(caption = "Scores (first 5 rows)", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+
+synopsis %>% 
+  slice_head(n = 5) %>% 
+    kbl(caption = "Synopsis (first 5 rows)", position = "left") %>%
+  kable_classic(full_width = F, html_font = "Cambria")
+```
+
+## EER Diagram
+
+```{r eer, echo=FALSE, fig.align='center', fig.cap='EER Diagram'}
+knitr::include_graphics(here::here("images", "eer-diagram.png"))
+```
+
+## Database 
+
+```{r mysql1, echo=FALSE, fig.align='center', fig.cap='Jeopardy Database Columns'}
+knitr::include_graphics(here::here("images", "mysql-columns.png"))
+```
+
+```{r mysql2, echo=FALSE, fig.align='center', fig.cap='Jeopardy Database Indexes'}
+knitr::include_graphics(here::here("images", "mysql-indexes.png"))
+```
