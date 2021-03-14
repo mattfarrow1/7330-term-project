@@ -14,6 +14,11 @@ clue_values <- tibble(round = c(rep(1, 5), rep(2, 5)),
 # Merge into board
 board_clean <- left_join(board, clue_values, by = c("round" = "round", "row" = "row"))
 
+#create table for just doubles including score
+doubles_score <- doubles %>%
+  select(uid, i, name, score) %>%
+  mutate(double = 1)
+
 # Find games and clues that are daily doubles
 doubles <- doubles %>% 
   select(uid, i) %>% 
@@ -25,6 +30,10 @@ board_clean$double[is.na(board_clean$double)] <- 0
 
 # Rename columns
 board_clean <- board_clean %>% 
+  rename("gameid" = uid,
+         "chosen" = i)
+
+doubles_score <- doubles_score %>%
   rename("gameid" = uid,
          "chosen" = i)
 
@@ -43,6 +52,14 @@ board_clean <- left_join(board_clean, location, by = c("row" = "row", "col" = "c
 # Create clueid
 board_clean <- board_clean %>% 
   mutate(clueid = row_number())
+
+#join clueid to doubles table
+doubles_score <- merge(doubles_score,board_clean,by=c("gameid","chosen","double"))
+
+#remove unnecessary columns
+doubles_score <- doubles_score %>%
+  select("clueid","gameid","name", "score")
+
 
 # Organize columns
 board_clean <- board_clean %>%
@@ -77,3 +94,8 @@ board_sql2 <- board_clean[,0:9]
 
 # Save file
 write_csv(board_sql2, here::here("data - output", "board_for_sql2.csv"))
+
+# Save file
+write_csv(doubles_score, here::here("data - output", "doubles_score.csv"))
+
+#see doubles_has_scores.R for double scores join to playerid
