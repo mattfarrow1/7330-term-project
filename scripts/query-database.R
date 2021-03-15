@@ -18,7 +18,8 @@ dbListTables(con)
 dbListFields(con, "board")
 
 # Read table
-dbReadTable(con, "episode")
+dbReadTable(con, "episode") %>% 
+  head()
 
 # Run Queries -------------------------------------------------------------
 
@@ -46,8 +47,15 @@ res <- dbSendQuery(
   GROUP BY subquery.rowcat, subquery.colcat
   ORDER BY count(*) DESC;"
 )
-dbFetch(res)
+
+# Save results
+doubles <- dbFetch(res, n = Inf)
+
+# Clear results
 dbClearResult(res)
+
+# Disconnect from the database
+dbDisconnect(con)
 
 # Using dbplyr ------------------------------------------------------------
 
@@ -65,10 +73,31 @@ summary %>% show_query()
 # execute query and retrieve results
 summary %>% collect()
 
-# End Session -------------------------------------------------------------
+# Doubles Locations -------------------------------------------------------
 
-# Clear the result
-dbClearResult(res)
+# Convert doubles to tibble
+doubles <- as_tibble(doubles)
 
-# Disconnect from the database
-dbDisconnect(con)
+# Define location as counting 1:30 as reading left-right, top-bottom
+location <- tibble(row = c(rep(1, 6),
+                           rep(2, 6),
+                           rep(3, 6),
+                           rep(4, 6),
+                           rep(5, 6)),
+                   col = c(rep(1:6, 5)),
+                   location = c(1:30))
+
+# Merge into board
+doubles <- left_join(doubles, location, by = c("rowcat" = "row", "colcat" = "col"))
+
+# Clean up
+doubles <- doubles %>% 
+  rename("row" = rowcat,
+         "column" = colcat,
+         "instances" = `count(*)`) %>% 
+  select(location, instances, row, column) %>% 
+  arrange(location)
+
+doubles %>% 
+  ggplot(aes(as.character(location), instances)) +
+  geom_col()
