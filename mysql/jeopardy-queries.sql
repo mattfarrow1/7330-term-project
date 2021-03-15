@@ -67,3 +67,20 @@ select count(doublejeop), episode_gameid
 from board
 where doublejeop = 1
 group by episode_gameid;
+
+# Who got the double jeopardy clue
+select board.clueid, category, clue, answer, players.playerid, players.firstname, players.lastname
+from board
+INNER JOIN doubles_has_scores on doubles_has_scores.clueid = board.clueid
+INNER JOIN players on players.playerid = doubles_has_scores.playerid
+where doublejeop = 1;
+
+# Summarize totals by playerid, and show top 10 players
+select count(board.clueid) as double_jeop_count, players.playerid, players.firstname, players.lastname
+from board
+INNER JOIN doubles_has_scores on doubles_has_scores.clueid = board.clueid
+INNER JOIN players on players.playerid = doubles_has_scores.playerid
+where doublejeop = 1
+GROUP BY playerid
+order by double_jeop_count desc
+limit 10;
