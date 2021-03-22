@@ -77,24 +77,52 @@ top <- dbSendQuery(
   limit 10;"
 )
 
-#for each top 10 player, where did they select the double jeopardy the most?
-top10_dj <- dbSendQuery(
+#top 10 notable player stats
+top10_stats <- dbSendQuery(
   con,
-  "select count(board.clueid) as loc_count, players.playerid, players.firstname, players.lastname, location.rowcat, location.colcat
+  "select players.firstname, players.lastname, round(avg(finalscore),1) AS average, max(finalscore) as max_score, round(avg(ansRight)) as avg_correct, round(avg(ansWrong)) as avg_incorrect, sum(ansRight) as total_correct, sum(ansWrong) as total_incorrect, count(*) as total_games
+  from synopsis_has_players
+  INNER JOIN synopsis on synopsis_has_players.synopsis_finalscoreid = synopsis.finalscoreid
+  INNER JOIN players on synopsis_has_players.players_playerid = players.playerid
+  group by playerid
+  order by total_correct desc
+  limit 10;"
+)
+
+#pull all player info for text analysis
+players <- dbSendQuery(
+  con,
+  "select * from players;"
+)
+
+#daily double clue info for text analysis joined to who answered it
+daily_doubles <- dbSendQuery(
+  con,
+  "select board.clueid, category, clue, answer, players.playerid, players.firstname, players.lastname
   from board
   INNER JOIN doubles_has_scores on doubles_has_scores.clueid = board.clueid
-  INNER JOIN location on board.clueid = location.board_clueid
   INNER JOIN players on players.playerid = doubles_has_scores.playerid
-  where doublejeop = 1 and players.playerid in (1, 12600, 861, 12824, 9037, 10171, 11663, 8885, 10911, 8522)
-  group by playerid, rowcat, colcat
-  order by playerid;"
+  where doublejeop = 1;"
+)
+
+#get all game player info to perform winner analysis in R
+winners <- dbSendQuery(
+  con,
+  "select finalscore, episode_gameid, finalscoreid, ansRight, ansWrong, players.firstname, players.lastname, players_playerid
+  from synopsis
+  inner join synopsis_has_players on synopsis_has_players.synopsis_finalscoreid = synopsis.finalscoreid
+  inner join players on players.playerid = synopsis_has_players.players_playerid;"
 )
 
 # Save results
 doubles <- dbFetch(res, n = Inf)
 who_db <- dbFetch(who_db, n = Inf)
 top <- dbFetch(top, n = Inf)
-top10_dj <- dbFetch(top10_dj, n = Inf)
+top10_stats <- dbFetch(top10_stats, n=Inf)
+all_players <- dbFetch(players, n=Inf)
+daily_d <- dbFetch(daily_doubles, n=Inf)
+winners <- dbFetch(winners, n=Inf)
+
 
 # Clear results
 dbClearResult(res)
@@ -147,7 +175,7 @@ doubles %>%
   ggplot(aes(as.character(location), instances)) +
   geom_col()
 
-# Top 10 Double Jeopardy count ----------
+# Top 10 Daily Double count ----------
 
 #create new column combining first and last name
 top <- top %>%
@@ -161,10 +189,21 @@ top %>%
   ggplot(aes(x = reorder(name, double_jeop_count), y = double_jeop_count)) +
   geom_col(fill="darkblue") +
   coord_flip() +
-  xlab("Contestant") +
-  ylab("Career Double Jeopardy Count") +
-  theme_light() +
-  ggtitle("Who Got the Most Double Jeopardy Clues?")
+  ylab("Career Daily Double Count") +
+  theme(axis.title.y = element_blank(),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 12),
+        panel.background = element_blank(),
+        plot.title = element_text(size = 15)) +
+  ggtitle("Who Got the Most Daily Double Clues?")
+
+# Daily Double Wagers ----------
+
+
+# Top Daily Double Categories --------
+
+# Determine who won each game -----
+
 
 
   
