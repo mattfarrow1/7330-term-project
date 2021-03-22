@@ -107,3 +107,5 @@ doubles %>%
     axis.text = element_text(face = "bold"),
     legend.position = ""
   )
+
+ggsave(here::here("images", "daily-double-locations.png"), dpi = "retina")
