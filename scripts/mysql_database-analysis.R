@@ -4,6 +4,21 @@
 source(here::here("scripts", "query-database.R"))
 library(scales)
 
+# Top Categories ----------------------------------------------------------
+
+# Create plot
+top_cat %>% 
+  mutate(games = as.numeric(games)) %>% 
+  ggplot(aes(games, reorder(category, games), label = comma(games, accuracy = 1))) +
+  geom_col(fill = "steelblue") +
+  geom_text(hjust =  1.5, color = "white", size = 4) +
+  labs(title = "Top 10 Most Common Categories",
+       x = "Games",
+       y = "") +
+  theme_minimal()
+
+ggsave(here::here("images", "top-10-categories.png"), dpi = "retina")
+
 # Double Jeopardy Locations -----------------------------------------------
 
 # Convert doubles to tibble
@@ -64,25 +79,30 @@ ggsave(here::here("images", "daily-double-locations.png"), dpi = "retina")
 
 # Top 10 Daily Double Count -----------------------------------------------
 
-#create new column combining first and last name
-top <- top %>%
+# Create new column combining first and last name
+top <- dj_top %>%
   mutate(name = paste(firstname,lastname))
 
-#change double_jeop_count to numeric
+# Change double_jeop_count to numeric
 top$double_jeop_count <- as.numeric(top$double_jeop_count)
 
+# Create plot
 top %>%
   arrange(double_jeop_count) %>%
   ggplot(aes(x = reorder(name, double_jeop_count), y = double_jeop_count)) +
-  geom_col(fill="darkblue") +
+  geom_col(fill = "darkblue") +
   coord_flip() +
   ylab("Career Daily Double Count") +
-  theme(axis.title.y = element_blank(),
-        axis.text.y = element_text(size = 12),
-        axis.title.x = element_text(size = 12),
-        panel.background = element_blank(),
-        plot.title = element_text(size = 15)) +
+  theme(
+    axis.title.y = element_blank(),
+    axis.text.y = element_text(size = 12),
+    axis.title.x = element_text(size = 12),
+    panel.background = element_blank(),
+    plot.title = element_text(size = 15)
+  ) +
   ggtitle("Who Got the Most Daily Double Clues?")
+
+ggsave(here::here("images", "top-daily-double-clues.png"), dpi = "retina")
 
 # Daily Double Wagers -----------------------------------------------------
 
