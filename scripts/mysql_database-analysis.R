@@ -1,7 +1,7 @@
 
 # Setup -------------------------------------------------------------------
 
-source(here::here("scripts", "query-database.R"))
+source(here::here("scripts", "mysql_query-database.R"))
 library(scales)
 #for text analysis
 library(tm)
@@ -18,7 +18,12 @@ top_cat %>%
   labs(title = "Top 10 Most Common Categories",
        x = "Games",
        y = "") +
-  theme_minimal()
+  theme(axis.title.y = element_text(size = 12),
+        axis.text.y = element_text(size = 12),
+        axis.title.x = element_text(size = 12),
+        panel.background = element_blank(),
+        plot.title = element_text(size = 15)
+  )
 
 ggsave(here::here("images", "top-10-categories.png"), dpi = "retina")
 
@@ -69,6 +74,10 @@ doubles %>%
   ) +
   theme_minimal() +
   theme(
+    axis.text.y = element_text(size = 11),
+    axis.text.x = element_text(size = 11),
+    panel.background = element_blank(),
+    plot.title = element_text(size = 15),
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
     axis.line = element_blank(),
@@ -92,8 +101,9 @@ top$double_jeop_count <- as.numeric(top$double_jeop_count)
 # Create plot
 top %>%
   arrange(double_jeop_count) %>%
-  ggplot(aes(x = reorder(name, double_jeop_count), y = double_jeop_count)) +
-  geom_col(fill = "darkblue") +
+  ggplot(aes(x = reorder(name, double_jeop_count), y = double_jeop_count, label = comma(double_jeop_count, accuracy = 1))) +
+  geom_col(fill = "steelblue") +
+  geom_text(hjust =  1.5, color = "white", size = 4) +
   coord_flip() +
   ylab("Career Daily Double Count") +
   theme(
