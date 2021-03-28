@@ -9,6 +9,11 @@ library(dbplyr)
 library(RODBC)
 library(dplyr)
 library(DT)
+library(scales)
+#for text analysis
+library(tm)
+library(wordcloud)
+
 
 
 ui <- dashboardPage(skin = "blue",
@@ -19,7 +24,6 @@ ui <- dashboardPage(skin = "blue",
                         menuItem(text = "Notable Player Analysis", tabName = "Players"),
                         menuItem(text = "Categories and Clues", tabName = "CE"),
                         menuItem(text = "Daily Double Exploration", tabName = "DDE")
-                        #menuItem(text = "The Best and the Worst", tabName = "TBTW")
                       )
                     ),
                     dashboardBody(
@@ -29,86 +33,42 @@ ui <- dashboardPage(skin = "blue",
                                 box(
                                   selectInput("features", "Features:",
                                               c("average", "max_score", "avg_correct", "total_correct", "total_incorrect", "total_games")), width = 4),
+                                box(plotOutput("careerstats"), width = 8),
                                 box(plotOutput("playerdailydouble"), width = 6)),
                         tabItem(tabName = "CE",
-                                box(tags$img(src = "category_wordplot.png", height = '400', width = '650'), width = 6),
-                                box(tags$img(src = "clue_worldcloud.png", height = '400', width = '650'), width = 6),
-                                box(tags$img(src = "top-10-categories.png", height = '400', width = '650'), width = 6),
-                                box(tags$img(src = "answer_wordcloud.png", height = '400', width = '650'), width = 6)),
+                                box(title= "Category Word Cloud", plotOutput("catwordcloud"), width = 6),
+                                box(title = "Clue Word Cloud", plotOutput("cluewordcloud")),
+                                box(plotOutput("topcategories"), width = 8)),
                         tabItem(tabName = "DDE",
-                                box(tags$img(src = "daily-double-answers.png"), width = 6),
-                                box(tags$img(src = "daily-double-locations.png", height = '400', width = '500'), width = 6),
-                                box(tags$img(src = "daily-double-wordcloud.png"), width = 6)
-                                
+                                box(plotOutput("doublelocation"), width = 8),
+                                box(title = "Daily Double Answers Word Cloud", plotOutput("answordcloud"), width = 6))
+                        
+
                       )
                     )
-))
+)
 
 #Establish connection to DB
 con <- dbConnect(RMariaDB::MariaDB(),
                  dbname = "jeopardy",
                  user = "",
-                 password = ""
+                 password = "!"
 )
 
-#Running Queries and Storing OUtput into data frames
+# SQL Query: Categories ---------------------------------------------------
 
-#### NOTABLE PLAYERS ANALYSIS #####
-            #top 10 notable player stats
-            top10_stats <- dbSendQuery(
-              con,
-              "select players.firstname, players.lastname, round(avg(finalscore),1) AS average, max(finalscore) as max_score, round(avg(ansRight)) as avg_correct, round(avg(ansWrong)) as avg_incorrect, sum(ansRight) as total_correct, sum(ansWrong) as total_incorrect, count(*) as total_games
-              from synopsis_has_players
-              INNER JOIN synopsis on synopsis_has_players.synopsis_finalscoreid = synopsis.finalscoreid
-              INNER JOIN players on synopsis_has_players.players_playerid = players.playerid
-              group by playerid
-              order by total_correct desc
-              limit 10;"
-            )
-            top10_stats_df <- dbFetch(top10_stats)
+# Get the top 10 categories
+res <- dbSendQuery(con, "SELECT category, count(*) AS games
+                   FROM board
+                   GROUP BY category
+                   ORDER BY games DESC
+                   LIMIT 10;")
+top_cat <- dbFetch(res, n = Inf)
+dbClearResult(res)
 
-            
-#### CATEGORY EVALUATION #########
-            #Get the top 10 Categories
-            
-            #Common values first chosen in a game?
-            top_placement <- dbSendQuery(
-              con, 
-              "SELECT score, count(*) AS games
-              FROM board
-              WHERE chosen = 1
-              GROUP BY score
-              ORDER BY score
-              LIMIT 10;"
-            )
-            top_placement_df <- dbFetch(top_placement)
-          
-            
-#top double jeopardy contestants
-top <- dbSendQuery(
-  con,
-  "select count(board.clueid) as double_jeop_count, players.playerid, players.firstname, players.lastname
-  from board
-  INNER JOIN doubles_has_scores on doubles_has_scores.clueid = board.clueid
-  INNER JOIN players on players.playerid = doubles_has_scores.playerid
-  where doublejeop = 1
-  GROUP BY playerid
-  order by double_jeop_count desc
-  limit 10;"
-)
+# SQL Query: Double Jeopardy ----------------------------------------------
 
-top <- dbFetch(top)
-# Top 10 Daily Double count ----------
-
-#create new column combining first and last name
-top <- top %>%
-  mutate(name = paste(firstname,lastname))
-
-#change double_jeop_count to numeric
-top$double_jeop_count <- as.numeric(top$double_jeop_count)
-
-#DOUBLE JEOPARDY
-
+# Double Jeopardy locations
 res <- dbSendQuery(
   con,
   "SELECT subquery.rowcat, subquery.colcat, count(*)
@@ -123,43 +83,201 @@ res <- dbSendQuery(
   GROUP BY subquery.rowcat, subquery.colcat
   ORDER BY count(*) DESC;"
 )
-doubles <- dbFetch(res, n = Inf)
+dj_loc <- dbFetch(res, n = Inf)
+dbClearResult(res)
 
-# Doubles Locations -------------------------------------------------------
+# Everyone who won Double Jeopardy
+res <- dbSendQuery(
+  con,
+  "select board.clueid, category, clue, answer, players.playerid, players.firstname, players.lastname
+  from board
+  INNER JOIN doubles_has_scores on doubles_has_scores.clueid = board.clueid
+  INNER JOIN players on players.playerid = doubles_has_scores.playerid
+  where doublejeop = 1;"
+)
+dj_who <- dbFetch(res, n = Inf)
+dbClearResult(res)
 
+# Top Double Jeopardy contestants
+res <- dbSendQuery(
+  con,
+  "select count(board.clueid) as double_jeop_count, players.playerid, players.firstname, players.lastname
+  from board
+  INNER JOIN doubles_has_scores on doubles_has_scores.clueid = board.clueid
+  INNER JOIN players on players.playerid = doubles_has_scores.playerid
+  where doublejeop = 1
+  GROUP BY playerid
+  order by double_jeop_count desc
+  limit 10;"
+)
+dj_top <- dbFetch(res, n = Inf)
+dbClearResult(res)
 
+# SQL Query: Players ------------------------------------------------------
+
+# Top 10 notable player stats
+res <- dbSendQuery(
+  con,
+  "select players.firstname, players.lastname, round(avg(finalscore),1) AS average, max(finalscore) as max_score, round(avg(ansRight)) as avg_correct, round(avg(ansWrong)) as avg_incorrect, sum(ansRight) as total_correct, sum(ansWrong) as total_incorrect, count(*) as total_games
+  from synopsis_has_players
+  INNER JOIN synopsis on synopsis_has_players.synopsis_finalscoreid = synopsis.finalscoreid
+  INNER JOIN players on synopsis_has_players.players_playerid = players.playerid
+  group by playerid
+  order by total_correct desc
+  limit 10;"
+)
+top10_stats <- dbFetch(res, n = Inf)
+dbClearResult(res)
+
+# All player info for text analysis
+res <- dbSendQuery(
+  con,
+  "select * from players;"
+)
+players <- dbFetch(res, n = Inf)
+dbClearResult(res)
+
+# All game player info to perform winner analysis in R
+res <- dbSendQuery(
+  con,
+  "select finalscore, episode_gameid, finalscoreid, ansRight, ansWrong, players.firstname, players.lastname, players_playerid
+  from synopsis
+  inner join synopsis_has_players on synopsis_has_players.synopsis_finalscoreid = synopsis.finalscoreid
+  inner join players on players.playerid = synopsis_has_players.players_playerid;"
+)
+winners <- dbFetch(res, n = Inf)
+dbClearResult(res)
+
+# SQL Query: Daily Doubles ------------------------------------------------
+
+# Daily Double clue info for text analysis joined to who answered it
+res <- dbSendQuery(
+  con,
+  "select board.clueid, category, clue, answer, players.playerid, players.firstname, players.lastname
+  from board
+  INNER JOIN doubles_has_scores on doubles_has_scores.clueid = board.clueid
+  INNER JOIN players on players.playerid = doubles_has_scores.playerid
+  where doublejeop = 1;"
+)
+daily_doubles <- dbFetch(res, n = Inf)
+dbClearResult(res)
+
+# Cleanup -----------------------------------------------------------------
+
+# Disconnect from the database
+dbDisconnect(con)
+
+# Double Jeopardy Locations -----------------------------------------------
 
 # Convert doubles to tibble
-doubles <- as_tibble(doubles)
-
-# Define location as counting 1:30 as reading left-right, top-bottom
-location <- tibble(row = c(rep(1, 6),
-                           rep(2, 6),
-                           rep(3, 6),
-                           rep(4, 6),
-                           rep(5, 6)),
-                   col = c(rep(1:6, 5)),
-                   location = c(1:30))
-
-# Merge into board
-doubles <- left_join(doubles, location, by = c("rowcat" = "row", "colcat" = "col"))
+doubles <- as_tibble(dj_loc)
 
 # Clean up
 doubles <- doubles %>% 
   rename("row" = rowcat,
-         "column" = colcat,
+         "category" = colcat,
          "instances" = `count(*)`) %>% 
-  select(location, instances, row, column) %>% 
-  arrange(location)
+  # mutate(pct = instances / 395350)  # number of clues in rounds 1 & 2
+  # mutate(pct = instances / 6775)    # number of games
+  mutate(pct = instances / sum(instances))
 
+# Add Accuracy to winners ----------
+winners <- winners %>%
+  mutate(accuracy = round(ansRight / (ansRight + ansWrong) *100))
 
+#who is in the 100% accuracy club
+onehundredclub <- filter(winners, accuracy == 100) %>%
+  select(firstname, lastname) %>%
+  distinct()
 
+#summarize career stats
+averages <- winners %>%
+  group_by(players_playerid, firstname, lastname) %>%
+  summarize(game_count = n(), avg_correct = mean(ansRight), avg_incorrect = mean(ansWrong),
+            total_correct = sum(ansRight), total_incorrect = sum(ansWrong),
+            max_score = max(finalscore),avg_acc = mean(accuracy), avg_score = mean(finalscore))
 
+top <- dj_top %>%
+  mutate(name = paste(firstname,lastname))
+
+# Change double_jeop_count to numeric
+top$double_jeop_count <- as.numeric(top$double_jeop_count)
+
+# Top Daily Double Key Words ---------------------------------------------
+#create corpus from the category, clue & answer information
+clue_corpus <- SimpleCorpus(VectorSource(daily_doubles$clue))
+category_corpus <- SimpleCorpus(VectorSource(daily_doubles$category))
+answer_corpus <- SimpleCorpus(VectorSource(daily_doubles$answer))
+
+# 1. Stripping any extra white space:
+clue_corpus <- tm_map(clue_corpus, stripWhitespace)
+category_corpus <- tm_map(category_corpus, stripWhitespace)
+answer_corpus <- tm_map(answer_corpus, stripWhitespace)
+
+# 2. Transforming everything to lowercase
+clue_corpus <- tm_map(clue_corpus, content_transformer(tolower))
+category_corpus <- tm_map(category_corpus, content_transformer(tolower))
+answer_corpus <- tm_map(answer_corpus, content_transformer(tolower))
+
+# 3. Removing numbers 
+clue_corpus <- tm_map(clue_corpus, removeNumbers)
+category_corpus <- tm_map(category_corpus, removeNumbers)
+answer_corpus <- tm_map(answer_corpus, removeNumbers)
+
+# 4. Removing punctuation
+clue_corpus <- tm_map(clue_corpus, removePunctuation)
+category_corpus <- tm_map(category_corpus, removePunctuation)
+answer_corpus <- tm_map(answer_corpus, removePunctuation)
+
+# 5. Removing stop words
+clue_corpus <- tm_map(clue_corpus, removeWords, stopwords("english"))
+category_corpus <- tm_map(category_corpus, removeWords, stopwords("english"))
+answer_corpus <- tm_map(answer_corpus, removeWords, stopwords("english"))
+
+DTM_clue <- DocumentTermMatrix(clue_corpus)
+DTM_category <- DocumentTermMatrix(category_corpus)
+DTM_answer <- DocumentTermMatrix(answer_corpus)
+
+#clue wordcloud - you may have to increase memory limit to run
+sums <- as.data.frame(colSums(as.matrix(DTM_clue)))
+sums <- rownames_to_column(sums)
+colnames(sums) <- c("term", "count")
+sums <- arrange(sums, desc(count))
+
+#what are top 10 words
+sums[1:10,]
+
+#make word cloud with top 50 words
+clue_50 <- sums[1:50,]
+
+#category wordcloud
+sums2 <- as.data.frame(colSums(as.matrix(DTM_category)))
+sums2 <- rownames_to_column(sums2)
+colnames(sums2) <- c("term", "count")
+sums2 <- arrange(sums2, desc(count))
+
+#what are top 10 words
+sums2[1:10,]
+
+#make word cloud with top 50 words
+cat_50 <- sums2[1:50,]
+
+#answer wordcloud
+sums3 <- as.data.frame(colSums(as.matrix(DTM_answer)))
+sums3 <- rownames_to_column(sums3)
+colnames(sums3) <- c("term", "count")
+sums3 <- arrange(sums3, desc(count))
+
+#what are top 10 words
+sums3[1:10,]
+
+#make word cloud with top 50 words
+ans_50 <- sums3[1:50,]
 
 server <-  function(input,output) {
   
   output$playerstatsBar <- renderPlot({
-    ggplot(data = top10_stats_df, aes(x = lastname, y = input$features)) + geom_bar(stat = "identity") + ggtitle("Top 10 Players Stats")
+    ggplot(data = top10_stats, aes(x = lastname, y = input$features)) + geom_bar(stat = "identity") + ggtitle("Top 10 Players Stats")
   })
   output$playerdailydouble <- renderPlot({
     top %>%
@@ -176,10 +294,80 @@ server <-  function(input,output) {
       ggtitle("Who Has the Most Daily Double Clues?")
   })
   output$doublelocation <- renderPlot({
-    doubles %>% 
-      ggplot(aes(as.character(location), instances)) +
-      geom_col()
+    doubles %>%
+      ggplot(aes(category, row, fill = pct, label = percent(pct, accuracy = 0.01))) +
+      geom_tile() +
+      geom_text(color = "white", size = rel(3.5)) +
+      labs(title = "Where are you likely to find a Daily Double?",
+           x = "",
+           y = "",
+           fill = "") +
+      scale_x_continuous(
+        breaks = c(1:6),
+        labels = c(
+          "Category 1",
+          "Category 2",
+          "Category 3",
+          "Category 4",
+          "Category 5",
+          "Category 6"
+        ),
+        position = "top"
+      ) +
+      scale_y_reverse(
+        breaks = c(1:5),
+        labels = c(
+          "$100/$200",
+          "$200/$400",
+          "$300/$600",
+          "$400/$800",
+          "$500/$1000"
+        )
+      ) +
+      theme_minimal() +
+      theme(
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.line = element_blank(),
+        axis.ticks = element_blank(),
+        
+        axis.text = element_text(face = "bold"),
+        legend.position = ""
+      )
   })
+    output$topcategories <- renderPlot({top_cat %>% 
+        mutate(games = as.numeric(games)) %>% 
+        ggplot(aes(games, reorder(category, games), label = comma(games, accuracy = 1))) +
+        geom_col(fill = "steelblue") +
+        geom_text(hjust =  1.5, color = "white", size = 4) +
+        labs(title = "Top 10 Most Common Categories",
+             x = "Games",
+             y = "") +
+        theme_minimal()}) 
+    
+    output$careerstats <- renderPlot({ggplot(averages, aes(x = avg_correct, y = avg_incorrect, color = avg_score)) +
+        geom_point() +
+        xlab("Average Correct Answers") +
+        ylab("Average Incorrect Answers") +
+        ggtitle("Average Player Accuracy") +
+        theme(
+          axis.title.y = element_text(size = 12),
+          axis.text.y = element_text(size = 12),
+          axis.title.x = element_text(size = 12),
+          plot.title = element_text(size = 15)
+        )})
+    
+    output$cluewordcloud <- renderPlot({wordcloud(words = clue_50$term, freq = clue_50$count,min.freq = 1,
+                                                  max.words=100, random.order=FALSE, rot.per=0.35, 
+                                                  colors=brewer.pal(6, "Blues"))})
+    
+    output$catwordcloud <- renderPlot({wordcloud(words = cat_50$term, freq = cat_50$count,min.freq = 1,
+                                                 max.words=100, random.order=FALSE, rot.per=0.35, 
+                                                 colors=brewer.pal(6, "Blues"))})
+    
+    output$answordcloud <- renderPlot({wordcloud(words = ans_50$term, freq = ans_50$count,min.freq = 1,
+                                                 max.words=100, random.order=FALSE, rot.per=0.35, 
+                                                 colors=brewer.pal(6, "Blues"))})
 }
 
 shinyApp(ui, server)
