@@ -1,0 +1,12 @@
+name: Jeopardy
+title: Jeopardy
+username:
+account: matt-farrow
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3903643
+bundleId: 4425162
+url: https://matt-farrow.shinyapps.io/Jeopardy/
+when: 1617390773.993
+asMultiple: FALSE
+asStatic: FALSE
