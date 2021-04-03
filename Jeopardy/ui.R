@@ -18,8 +18,9 @@ ui <- dashboardPage(
     dashboardHeader(title = "JEOPARDY! Insights"),
     dashboardSidebar(
         sidebarMenu(
-            menuItem(text = "Notable Player Analysis 1", tabName = "Players"),
-            menuItem(text = "Notable Player Analysis 2", tabName = "Players2")
+            menuItem(text = "Player Accuracy", tabName = "Players"),
+            menuItem(text = "Player Stats", tabName = "Players2"),
+            menuItem(text = "100 Club", tabname = "Players3")
         )
     ),
     dashboardBody(
@@ -48,7 +49,6 @@ ui <- dashboardPage(
                     ),
                     mainPanel(plotOutput(outputId = "playerplot", width = "500px", height = "500px"))
                 ),
-                box(plotOutput("playerdailydouble"), width = 6)
             ),
             tabItem(
                 tabName = "Players2",
@@ -59,18 +59,27 @@ ui <- dashboardPage(
                         selectInput(
                             inputId = "stat", label = h3("Stat"),
                             choices = c(
-                                "Average" = "average",
-                                "Max Score" = "max_score",
-                                "Average Correct" = "avg_correct",
-                                "Average Incorrect" = "avg_incorrect",
-                                "Total Correct" = "total_correct",
-                                "Total Incorrect" = "total_incorrect",
-                                "Total Games" = "total_games"
+                                "Average Winnings" = "average",
+                                "Max Single Game Score" = "max_score",
+                                "Average Correct Per Game" = "avg_correct",
+                                "Average Incorrect Per Game" = "avg_incorrect",
+                                #"Total Correct" = "total_correct",
+                                #"Total Incorrect" = "total_incorrect",
+                                "Total Games Played" = "total_games"
                             )
                         )
                     ),
                     box(plotOutput(outputId = "statplot"))
                 )
+            ),
+            tabItem(
+                tabName = "Players3",
+                sidebarLayout(
+                    # Sidebar panel
+                    sidebarPanel(
+                    ),
+                    mainPanel(plotOutput(outputId = "playerplot", width = "500px", height = "500px"))
+                ),
             )
         )
     )

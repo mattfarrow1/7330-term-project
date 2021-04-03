@@ -110,22 +110,6 @@ shinyServer(function(input, output) {
             scale_y_continuous(labels = comma) +
             theme_minimal()
     })
-    output$playerdailydouble <- renderPlot({
-        top %>%
-            arrange(double_jeop_count) %>%
-            ggplot(aes(x = reorder(name, double_jeop_count), y = double_jeop_count)) +
-            geom_col(fill = "steelblue") +
-            coord_flip() +
-            ylab("Career Daily Double Count") +
-            theme(
-                axis.title.y = element_blank(),
-                axis.text.y = element_text(size = 12),
-                axis.title.x = element_text(size = 12),
-                panel.background = element_blank(),
-                plot.title = element_text(size = 15)
-            ) +
-            ggtitle("Who Has the Most Daily Double Clues?")
-    })
     output$doublelocation <- renderPlot({
         doubles %>%
             ggplot(aes(
@@ -203,7 +187,7 @@ shinyServer(function(input, output) {
     
     output$playerplot <- renderPlot({
         ggplot(data1(), aes(id, total_accuracy, color = lastname)) +
-            geom_point(alpha = 0.5, size = 3) +
+            geom_line(alpha = 0.5, size = 1) +
             labs(
                 title = "How Accurate are the Most Notable Players?",
                 x = "Game Appearance",
