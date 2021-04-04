@@ -74,17 +74,12 @@ ui <- dashboardPage(
                         )),
                     box(plotOutput(outputId = "statplot"))
                 ))
-        # ,
-        # tabItem(tabName = "Players3",
-        #         sidebarLayout(# Sidebar panel
-        #             sidebarPanel(
-        #                 mainPanel(
-        #                     plotOutput(
-        #                         outputId = "accuracyplot",
-        #                         width = "500px",
-        #                         height = "500px"
-        #                     )
-        #                 )
-        #             )))
+         #,
+         #tabItem(tabName = "Players3",
+        #         sidebarLayout(
+        #         sidebarPanel(
+        #           selectInput())),
+        #         mainPanel(
+        #           box(tableOutput(outputId = "hundredclub"))))
     ))
 )

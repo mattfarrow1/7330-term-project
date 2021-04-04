@@ -9,6 +9,7 @@
 
 library(shiny)
 library(tidyverse)
+library(DT)
 
 # Define server logic required to draw a histogram
 shinyServer(function(input, output) {
@@ -112,4 +113,5 @@ shinyServer(function(input, output) {
     #         scale_y_continuous(labels = percent) +
     #         theme_minimal()
     # })
+    output$hundredclub <- renderTable({onehundredclub})
 })
