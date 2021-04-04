@@ -5,8 +5,9 @@ account: matt-farrow
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 3903643
-bundleId: 4425162
+bundleId: 4430095
 url: https://matt-farrow.shinyapps.io/Jeopardy/
-when: 1617390773.993
+when: 1617546587.70564
 asMultiple: FALSE
 asStatic: FALSE
+ignoredFiles: tests/shinytest.R
