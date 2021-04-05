@@ -1,0 +1,246 @@
+---
+title: "Jeopardy! Insights"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    source_code: embed
+runtime: shiny
+---
+
+```{r global, include=FALSE}
+library(shiny)
+library(flexdashboard)
+library(tidyverse)
+library(scales)
+library(reactable)
+library(shinyjs)
+library(crosstalk)
+library(DT)
+
+# Load Data (locally)
+# load(here::here("Jeopardy", "jeopardy_app_data.RData"))
+    
+# Load Data (for Shiny)
+load("jeopardy_app_data.RData")
+```
+
+Player Accuracy
+===================================== 
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+```{r}
+checkboxGroupInput(
+  inputId = "player",
+  label = h3("Choose a Player:"),
+  choices = c(
+    "Arthur Chu" = "Chu",
+    "Julia Collins" = "Collins",
+    "James Holzhauer" = "Holzhauer",
+    "Matt Jackson" = "Jackson",
+    "Ken Jennings" = "Jennings",
+    "Jason Keller" = "Keller",
+    "David Madden" = "Madden",
+    "Austin Rogers" = "Rogers",
+    "Seth Wilson" = "Wilson",
+    "Jason Zuffranieri" = "Zuffranieri"
+  )
+)
+```
+
+Column
+-----------------------------------------------------------------------
+
+### Top 10 Player's Accuracy
+
+```{r}
+# Add ID Column
+player_accuracy <- player_accuracy %>%
+  group_by(lastname) %>%
+  mutate(id = row_number()) %>%
+  ungroup()
+
+# Make Reactive & Filter Based on Input
+data_accuracy <- reactive({
+  req(input$player)
+  df <- player_accuracy %>%
+    filter(lastname %in% input$player)
+})
+
+filtereddata <- reactive({
+  player_accuracy[player_accuracy$player %in% input$inputplayers]
+})
+
+# Create Plot
+renderPlot({
+  ggplot(data_accuracy(), aes(id, total_accuracy, color = lastname)) +
+    geom_line(alpha = 0.5, size = 1) +
+    labs(
+      title = "How Accurate are the Most Notable Players?",
+      x = "Game Appearance",
+      y = "Accuracy",
+      color = "Player"
+    ) +
+    scale_y_continuous(labels = percent) +
+    theme_minimal()
+})
+```
+
+Player Stats
+===================================== 
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+```{r}
+# List Selector
+selectInput(
+  inputId = "stat",
+  label = h3("Stat"),
+  choices = c(
+    "Average Winnings" = "average",
+    "Max Single Game Score" = "max_score",
+    "Average Correct Per Game" = "avg_correct",
+    "Average Incorrect Per Game" = "avg_incorrect",
+    "Total Games Played" = "total_games"
+  )
+)
+```
+
+Column
+-----------------------------------------------------------------------
+
+### Top 10 Player's Stats
+
+```{r}
+# Pivot Longer
+top10_stats <- top10_stats %>%
+  dplyr::select(-firstname) %>%
+  mutate(across(c(2:8), as.numeric)) %>%
+  pivot_longer(cols = c(2:8), names_to = "stat")
+
+# Make Reactive & Filter Based on Input
+data_stats <- reactive({
+  req(input$stat)
+  df <- top10_stats %>%
+    filter(stat %in% input$stat)
+})
+
+# Create Plot
+renderPlot({
+  ggplot(data_stats(), aes(lastname, value)) +
+    geom_col(fill = "steelblue") +
+    labs(x = "",
+         y = "") +
+    scale_y_continuous(labels = comma) +
+    theme_minimal()
+})
+```
+
+Test Your Knowledge
+===================================== 
+
+Column {.sidebar}
+-----------------------------------------------------------------------
+
+```{r}
+radioButtons(inputId = "round",
+             label = h3("Choose Round"),
+             choices = c('1', '2'),
+             selected = '1')
+
+selectInput(
+  inputId = "category",
+  label = h3("Choose Category"),
+  choices = c(
+    "American History",
+    "Animals",
+    "Art",
+    "Authors",
+    "Before & After",
+    "Bodies of Water",
+    "Books & Authors",
+    "Business & Industry",
+    "Colleges & Universities",
+    "History",
+    "Islands",
+    "Literature",
+    "Potpourri",
+    "Religion",
+    "Science",
+    "Sports",
+    "The Bible",
+    "Transportation",
+    "U.S. Cities",
+    "U.S. Geography",
+    "U.S. History",
+    "Word Origins",
+    "World Capitals",
+    "World Geography",
+    "World History"
+  )
+)
+```
+
+Column
+-----------------------------------------------------------------------
+
+```{r}
+data_board <- reactive({
+
+  req(input$round)
+  req(input$category)
+
+  board %>%
+    filter(round == input$round,
+           category == input$category) %>%
+    slice_sample(n = 5) %>%
+    select(clue, answer) %>% 
+    rename("Clue" = "clue",
+           "Answer" = "answer")
+})
+
+renderDataTable({
+    datatable(
+      data_board(),
+      rownames = FALSE,
+      extensions = "Buttons",
+      options = list(
+        dom = "Bfrtip",
+        buttons = list(list(extend = "colvis", columns = 1)),
+        columnDefs = list(list(visible = FALSE, targets = 1))
+      )
+    )
+})
+```
+
+Explore Players
+===================================== 
+
+### Player Info
+
+```{r}
+players %>% 
+  select(-1) %>% 
+  rename("First" = "firstname",
+         "Last" = "lastname",
+         "Occupation" = "occupation",
+         "Location" = "location") %>% 
+  reactable(searchable = TRUE, minRows = 10)
+```
+
+### Can You Find:
+
+- the SMU students?
+- a famous author from Maine?
+- a member of the boy band 98º?
+- King George III?
+
+```{r include=FALSE}
+# - Southern Methodist University
+# - Stephen King
+# - Drew Lachey
+# - Jonathan Groff
+```
+
