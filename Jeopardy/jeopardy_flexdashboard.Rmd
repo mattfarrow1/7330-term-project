@@ -14,7 +14,6 @@ library(tidyverse)
 library(scales)
 library(reactable)
 library(shinyjs)
-library(crosstalk)
 library(DT)
 
 # Load Data (locally)
@@ -102,8 +101,7 @@ selectInput(
     "Average Winnings" = "average",
     "Max Single Game Score" = "max_score",
     "Average Correct Per Game" = "avg_correct",
-    "Average Incorrect Per Game" = "avg_incorrect",
-    "Total Games Played" = "total_games"
+    "Average Incorrect Per Game" = "avg_incorrect"
   )
 )
 ```
@@ -159,7 +157,6 @@ selectInput(
     "Art",
     "Authors",
     "Before & After",
-    "Bodies of Water",
     "Books & Authors",
     "Business & Industry",
     "Colleges & Universities",
@@ -235,12 +232,18 @@ players %>%
 - the SMU students?
 - a famous author from Maine?
 - a member of the boy band 98º?
-- King George III?
+- *Hamilton's* King George III?
+- the second person to walk on the moon?
+- how many contestants were from Alaska?
+- a host of one of *Jeopardy!'s* rival game shows?
 
 ```{r include=FALSE}
 # - Southern Methodist University
 # - Stephen King
 # - Drew Lachey
 # - Jonathan Groff
+# - Buzz Aldrin
+# - 10
+# - Pat Sajak
 ```
 
